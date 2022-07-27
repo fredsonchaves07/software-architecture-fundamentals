@@ -6,16 +6,14 @@
 - [x] Constante evolução da tecnologia. Qualquer definição lançada hoje pode está desatualizado em poucos anos
 - [x] Muito material sobre arquitetura de software não tem conteúdo relevante ou é muito antigo
 
-## Arquiteto de software
-- Através deste gráfico conseguimos ter uma noção preliminar do que seria arquitetura de software
-![image](https://user-images.githubusercontent.com/43495376/180576307-941c48fd-48d3-416b-90ac-f135d8edfa63.png)
-
 ## O que é arquitetura de software?
 - A indústria não sabe definir o que é "Arquitetura de Software"
 - Algumas pessoas definem que arquitetura de software é um "blueprint" do sistema. Outros acreditam ser um "roadmap" para o desenvolvimento do sistema
 - O que deve ser considerado na análise de uma arquitetura?
 - Arquitetura é sempre design. Design nem sempre é arquitetura
 - O objetivo da arquitetura de software é garantir que os objetivos de negócios, atributos de qualidade e restrições de alto nível sejam atendidos
+- Através deste gráfico conseguimos ter uma noção preliminar do que seria arquitetura de software
+![image](https://user-images.githubusercontent.com/43495376/180576307-941c48fd-48d3-416b-90ac-f135d8edfa63.png)
 - Consiste na estrutura e caracterísitcas
 ![image TETSP1](https://user-images.githubusercontent.com/43495376/180885688-4589ea06-620e-4eff-b29d-0e7a16e6bd4b.png)
 
@@ -38,5 +36,10 @@
 ## Príncipios de design
 - Provê um guia para construção de sistemas
 - São esperados a forma que será realizada a comunicação
-
 ![image Z33GP1](https://user-images.githubusercontent.com/43495376/180890541-49fec550-da46-4bd2-a381-2d5c7d027243.png)
+
+## Arquiteto de software
+- Muitas empresas não tem um papel definido ou específico para o arquiteto de software
+- Geralmente o desenvolvedor senior assume responsabilidades de um arquiteto de software
+- Pensa a solução a partir dos componentes, responsabilidades e estratégias
+- Serve como orquestrador entre o time técnico
