@@ -41,5 +41,16 @@ e como usá-lo para resolver problemas específicos
 
 ![image F3R9P1](https://user-images.githubusercontent.com/43495376/182482936-d595b3e2-40aa-4dc4-b7cd-65cde7b0f263.png)
 
+## Trade-Offs
 
+- Um arquiteto deve avaliar trade-offs em todas as soluções (Ganhos e Perdas)
+- Pensar arquitetura é avaliar os beneficios de uma solução técnica (Aspectos positivos e negativos)
+- Exemplo de um trade-off de mensageria por tópico
 
+![Captura de tela de 2022-08-03 18-12-39](https://user-images.githubusercontent.com/43495376/182712884-63f796bf-2ff9-47fb-9a54-483be806dd6f.png)
+
+## Entendendo as regras de negócios
+
+- Pensar como um arquiteto é entender e avaliar as regras de negócios e aplicar em um modelo que possa ser traduzido para um software
+- Entendimento das características arquiteturais (Escalabilidade, perfomance e disponibilidade)
+- Além disso, um arquiteto deve ter um relacionamento próximo aos stakeholderes e desenvolvedores
