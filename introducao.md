@@ -16,6 +16,7 @@
 ![image](https://user-images.githubusercontent.com/43495376/180576307-941c48fd-48d3-416b-90ac-f135d8edfa63.png)
 - Consiste na estrutura e caracterísitcas
 ![image TETSP1](https://user-images.githubusercontent.com/43495376/180885688-4589ea06-620e-4eff-b29d-0e7a16e6bd4b.png)
+- De acordo com o Rick Zasman e Lean Bass Paul, arquitetura é antes de tudo uma abstração de um sistema que seleciona certos detalhes e suprime outros
 
 ### Estrutura
 - Refere-se ao tipo de estilo de arquitetura utilizado no sistema
