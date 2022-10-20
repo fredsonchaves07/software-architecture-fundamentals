@@ -27,6 +27,7 @@
 - Outra dimenção para definir arquitetura de software
 - Define as caracteristicas da aplicação
 - Refere se as "ades" que o sistema supporta
+- O conjunto de características arquitetônicas não é fixo nem limitado. Depende do que é útil para organização
 ![image I0ADP1](https://user-images.githubusercontent.com/43495376/180886568-5e51b7f1-df9f-44d2-bd5a-d7c2473efcb0.png)
 
 ### Decisões arquiteturais
