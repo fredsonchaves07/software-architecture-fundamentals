@@ -43,3 +43,36 @@ visões diferentes das várias estruturas de um corpo humano.
 ![image UUJWU1](https://user-images.githubusercontent.com/43495376/197063790-3262dee5-0b1a-462e-a318-447e1e3d7f3f.png)
 
 - Estruturas de módulos podem ajudar a responder as seguintes perguntas
+  - Que é a responsabidade funcional primária de cada módulo?
+  - Quais outros elementos de software o módulo pode usar?
+  - Quais as dependências que o módulo precisa atualmente?
+  - Quais módulos se relaciona com outros módulos por generalização ou especialização?
+- Estruturas de módulos transmitem essas informações diretamente mas também podem ser usadas para responder as perguntas sobre o impacto no sistema quando as responsabilidades atribuidas a cada mudança de módulo.
+- Assim, as estruturas dos módulos são as principais ferramentas para raciocinar sobre a capacidade de modificação de um sistema.
+
+## Estruturas de alocação
+
+- Estabelecem o mapeamento das estruturas de software para estruturas de não software como sua organização, o seu desenvolvimento, ambientes de testes e execução
+- Essas estruturas respondem as seguintes perguntas:
+  -  Em quais processadores cada elemento de software é executado?
+  -  Qual diretório ou arquivo está armazenado cada elemento durante o desenvolvimento, teste e build do sistema?
+  -  Qual responsabilidade de cada elemento de software às equipes de desenvolvimento?
+
+## Algumas estruturas de módulos úteis
+
+### Estruturas de decomposição
+
+- As unidades são módulos que estão relacionados entre si pela relação “é-um-submódulo-de”, mostrando como os módulos são decompostos em módulos menores recursivamente até que os módulos sejam pequenos o suficiente para serem facilmente compreendido
+- Módulos nesta estrutura representam um ponto comum do inicio do projeto e o arquiteto enumera quais unidades de software tem que fazer e atribui cada item a um módulo para posterior (mais detalhado) projeto e eventual implementação
+- Módulos possui produtos (especificação de interface, código e plano de testes) associada com o item
+- A estrutura de decomposição determina em grande escala a modificabilidade do sistema
+- Quais impactos a mudança gera nos módulos?
+- Essa estrutura geralmente é utilizada como base na organização do projeto de desenvolvimento, incluindo a documentação e planos de testes
+
+![image HEVNU1](https://user-images.githubusercontent.com/43495376/197659754-f7004e90-c789-4e27-a612-089d08ba29dc.png)
+
+### Estruturas de uso
+
+- As unidades são também módulos e talvez classes. Elas estão relacionados pela relação de "uso", uma forma especializada de dependência
+
+![image KL6VU1](https://user-images.githubusercontent.com/43495376/197661244-966eabbb-8c1c-4bfc-820f-967312dc052b.png)
