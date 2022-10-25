@@ -27,7 +27,7 @@ visões diferentes das várias estruturas de um corpo humano.
 
 ![image U00GU1](https://user-images.githubusercontent.com/43495376/197061948-76d2aaa2-e39e-4d25-9931-22b1afa55d7f.png)
 
-## Estruturas de módulos
+### Estruturas de módulos
 
 - Mostram como um sistema é estruturado e como um conjunto de códigos ou unidades de dados devem ser construídos
 - Os módulos recebem responsabilidades computacionais específicas e são a base do trabalho tarefas para equipes de programação
@@ -58,7 +58,7 @@ visões diferentes das várias estruturas de um corpo humano.
   -  Qual diretório ou arquivo está armazenado cada elemento durante o desenvolvimento, teste e build do sistema?
   -  Qual responsabilidade de cada elemento de software às equipes de desenvolvimento?
 
-## Algumas estruturas de módulos úteis
+## Utilização de algumas estruturas de módulos
 
 ### Estruturas de decomposição
 
@@ -76,3 +76,62 @@ visões diferentes das várias estruturas de um corpo humano.
 - As unidades são também módulos e talvez classes. Elas estão relacionados pela relação de "uso", uma forma especializada de dependência
 
 ![image KL6VU1](https://user-images.githubusercontent.com/43495376/197661244-966eabbb-8c1c-4bfc-820f-967312dc052b.png)
+
+### Estruturas de camada
+
+- Os módulos dessa estrutura são conhecidos como camadas. A Camada é uma abstração "Máquina virtual" que provê um conjunto de serviços coesos através de interfaces gerenciáveis
+
+![image MN9SU1](https://user-images.githubusercontent.com/43495376/197892123-c112e8c9-1644-4048-9bbf-0de36e458c54.png)
+
+### Estruturas de classes (Generalização)
+
+- Os módulos dessa estrutura são conhecidos como classes e possui uma relação de "herda de " ou "é uma instância de".
+- A estrutura de classes permite razão sobre a reutilização e a adição incremental de funcionalidade
+- Geralmente é usada em documentação de um projeto de orientação de objetos
+
+![image 7Q9JU1](https://user-images.githubusercontent.com/43495376/197892497-63aadc9c-a741-4949-ae1a-6e5f1a11c7c0.png)
+
+### Data model
+
+- Descreve a informação estática de uma entidade e seus relacionamentos
+- Utilizado em banco de dados
+
+![image 05YHU1](https://user-images.githubusercontent.com/43495376/197892675-c68ee98e-1f85-4190-9345-5a72d5e3ad6c.png)
+
+
+## Utilização de algumas estruturas C&C
+
+### Estrutura de serviço
+
+- As unidades são serviços que interagem por meio de um mecanismo de coordenação de serviços, como mensagens.
+
+### Estrutura de concorrência
+
+- Este tipo de estrutura permite que o arquiteto determine oportunidades de paralelismo e locais onde a conteção de recursos pode ocorrer.
+- As unidades são componentes e os conectores são seus mecanismos de comunicação
+- Os componentes são organizados em “tópicos"
+
+
+## Utilização de algumas estruturas de alocação
+
+### Estrutura de deplyoy
+
+- Define como o sofware está atribuido em algum elemento de hardware, processamento e comunicação
+- Os elementos são elementos de software (geralmente um processo de uma estrutura C&C), hardware entidades (processadores) e vias de comunicação.
+- Esta estrutura pode ser usada para identificar atributos de qualidade como perfomance, integridade dos dados, securança e disponibilidade
+
+![image DKUFU1](https://user-images.githubusercontent.com/43495376/197894602-e27813a4-8d7c-4911-a15c-0c4de71d3926.png)
+
+### Estrutura de implementação
+
+- Esta estrutura mostra como os elementos de software são mapeados para uma estrutura de arquivo em um sistema de deploy, integração, testes ou ambiente de configuração. 
+- Pode ser crítico para o gerenciamento de atividades de desenvolvimento e processos de construção
+
+### Estrutura de atribuição de trabalho
+
+- Esta estrutura atribui responsabilidade para implementação e integração dos módulos para os times que realizarão essas tarefas
+- Determina as principais vias de comunicação entre as equipes como videoconferências, wikis, listas de emails, grupos de whatsapp etc.
+
+## Estruturas arquiteturais e suas relações
+
+![image CG0EU1](https://user-images.githubusercontent.com/43495376/197895764-1a42b31b-d8e0-481c-8434-22b18f2ed05d.png)
