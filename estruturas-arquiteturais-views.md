@@ -135,3 +135,29 @@ visões diferentes das várias estruturas de um corpo humano.
 ## Estruturas arquiteturais e suas relações
 
 ![image CG0EU1](https://user-images.githubusercontent.com/43495376/197895764-1a42b31b-d8e0-481c-8434-22b18f2ed05d.png)
+
+## Relacionando as estruturas
+
+- Cada estrutura é útil e pode ser usada para cada tipo de contexto diferente
+- Elementos de um estrutura estará relacionada a elementos de outras estruturas, e precisamos raciocinar sobre essas relações. Por exemplo, um módulo em uma estrutura de decomposição pode ser manifestado como um, parte de um ou vários componentes em uma estrutura C&C
+
+![image 927CU1](https://user-images.githubusercontent.com/43495376/198083967-d9cf60b2-8221-4d1e-a0c5-88724ec0ffd3.png)
+
+- Essas duas visões são usadas para coisas distintas. Por exemplo, a visualização à direita pode ser usada para análise de desempenho, previsão de gargalos e gerenciamento de tráfego de rede, o que seria extremamente difícil ou impossível de fazer com a vista à esquerda
+
+## Menos é melhor
+
+- Nem todos os sistemas garantem a consideração de muitas estruturas arquitetônicas.
+- Em geral, você deve projetar e documentar uma estrutura somente se isso trouxer um retorno positivo sobre o investimento, geralmente em termos de diminuição do desenvolvimento ou manutenção custos
+
+## Quais estruturas escolher?
+
+- Quais delas um arquiteto deve escolher para trabalhar? Quais o arquiteto deve optar por documentar?
+- Deve-se levar em consideração o atributo em seguida, escolher aqueles que desempenharão o melhor papel na entrega dos resultados esperados que não impactarão nos atributos de qualidade
+
+## O que seria uma boa arquitetura?
+
+- A arquitetura deve apresentar módulos usando o principio de "data hiding" e separação de responsabilidades. Os módulos de ocultação de informações devem encapsular coisas que podem mudar, isolando assim o software dos efeitos de essas mudanças
+- Cada módulo deve ter uma interface bem definida que encapsula ou “esconde” os aspectos mutáveis de outro software que usa suas instalações. Essas interfaces devem permitir seu respectivo desenvolvimento equipes a trabalhar em grande parte independentemente umas das outras
+- A arquitetura nunca deve depender de um produto, tecnologia ou serviço
+- Os módulos que produzem dados devem ser separados dos módulos que consomem dados 
