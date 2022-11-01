@@ -10,6 +10,8 @@ visões diferentes das várias estruturas de um corpo humano.
 
 - Estruturas arquiteturais podem ser divididas nas seguintes categorias principais, dependendo dos elementos e o raciocinio que eles se relacionam.
 
+![Captura de tela de 2022-10-31 22-07-42](https://user-images.githubusercontent.com/43495376/199137021-b5a6b9e3-4a57-4a08-8563-2924447838b3.png)
+
 ### Component-and-connector (C&C)
 
 - Esse tipo de estrutura tem o foco na interação dos elementos de cada execução do sistema
@@ -26,6 +28,11 @@ visões diferentes das várias estruturas de um corpo humano.
 - Essas estruturas são de importância crucial para fazer perguntas sobre as propriedades de tempo de execução do sistema, como desempenho, segurança, disponibilidade e muito mais
 
 ![image U00GU1](https://user-images.githubusercontent.com/43495376/197061948-76d2aaa2-e39e-4d25-9931-22b1afa55d7f.png)
+
+- Outro exemplo de utilização de C&C
+
+![Captura de tela de 2022-10-31 22-22-45](https://user-images.githubusercontent.com/43495376/199138306-72145c93-aa50-452b-8f54-f8dc35d02111.png)
+
 
 ### Estruturas de módulos
 
@@ -144,6 +151,7 @@ visões diferentes das várias estruturas de um corpo humano.
 ![image 927CU1](https://user-images.githubusercontent.com/43495376/198083967-d9cf60b2-8221-4d1e-a0c5-88724ec0ffd3.png)
 
 - Essas duas visões são usadas para coisas distintas. Por exemplo, a visualização à direita pode ser usada para análise de desempenho, previsão de gargalos e gerenciamento de tráfego de rede, o que seria extremamente difícil ou impossível de fazer com a vista à esquerda
+- Em resumo as 3 estruturas arquiteturais
 
 ## Menos é melhor
 
