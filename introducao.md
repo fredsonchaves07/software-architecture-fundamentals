@@ -1,5 +1,8 @@
 # Introdução
 
+> We are called to be architects of the future, not its victims 
+(R. Buckminster Fuller)
+
 ## Porque não existe um caminho definido para um arquiteto de software?
 - [x] A indústria não tem uma boa definição da arquitetura de software
 - [x] Grande quantidade de escpos e responsabilidades que continuam a evoluir
