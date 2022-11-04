@@ -34,3 +34,9 @@ garlan@cs.cmu.edu
 
 - Ao fornecer uma descrição abstrata de um sistema, a arquitetura expõe certas propriedades, enquanto oculta outras.
 - A arquitetura pode desempenhar um importante papel nos aspectos de desenvolvimento de software.
+  - **Compreensão**: Facilita a habilidade de entendimento, principalmente em questões de abstração de grandes sistemas. Além disso, uma boa arquitetura expôe as restrições de alto nível o que facilita na escolha de boas decisões arquiteturais
+  - **Reuso**: Suporta reutilização em vários níveis. Um projeto arquitetônico suporta tanto a reutilização de grandes componentes como também, a integração desses componentes. 
+  - **Desenvolvimento**: Provê uma visão geral do desenvolvimento indicando os principais componentes e depedencias entre elas. Ajuda identificar as interfaces, restrições e serviços que o sistema pode oferecer.
+  - **Evolução**: Os desenvolvedores e gerentes de projeto podem identificar os principais impactos de uma mudança em um sistema projetado. Ajuda a estimar com mais precisão os custos de uma modificação. 
+  - **Analise**: Ajuda a analisar os atributos de qualidade, restrições, dependencias, etc.
+  - **Gerenciamento**: Avaliação crítica de um arquitetura normalmente leva a uma compreensão muito mais clara dos requisitos, estratégias de implementação, e riscos potenciais
