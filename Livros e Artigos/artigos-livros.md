@@ -5,6 +5,7 @@
 - [ ] Applied Software Architecture Christine Hofmeister, Robert Nord, Dilip Soni
 - [ ] Just Enough Software Architecture A Risk-Driven Approach
 - [ ] Pattern-Oriented Software Architecture, A System of Patterns
+- [ ] E. Rechtin. Systems architecting: Creating and Building Complex Systems. Prentice Hall, 1991. 
 
 
 ## Artigos
@@ -26,3 +27,6 @@
 - [ ] D. Garlan, R. Allen and J. Ockerbloom. Exploiting style in architectural design environments. In Proc of SIGSOFT94: The second ACM SIGSOFT Symposium on the Foundations of Software Engineering, pages 170-185. ACM Press, December 1994. 
 - [ ] J. Magee, N. Dulay, S. Eisenbach and J. Kramer. Specifying distributed software architectures. In Proceedings of the Fifth European Software Engineering Conference, ESEC95, September 1995.
 - [ ] B. Boehm, P. Bose, E. Horowitz and M. J. Lee. Software requirements negotiation and renegotiation aids: A theory-W based spiral approach. In Proc 17 th International Conference on Software Engineering, 1994. 
+- [ ] D. E. Perry and A. L. Wolf. Foundations for the study of software architecture. ACM SIGSOFT Software Engineering Notes, 17(4):40-52, October 1992. 
+- [ ] D. Garlan and M. Shaw. An Introduction to software architecture. In Advances in Software Engineering and Knowledge Engineering, pages 1-39, Singapore, 1993. World Scientific Publishing Company. 
+- [ ] 
