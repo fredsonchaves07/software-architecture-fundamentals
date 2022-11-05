@@ -10,7 +10,8 @@
 
 ## Artigos
 
-- [ ] [Third Student Conference on Advanced Object-Oriented Concepts](https://www.diva-portal.org/smash/get/diva2:837867/FULLTEXT01.pdf)
+- [ ] [Architectural Blueprints—The “4+1” View Model of Software Architecture](https://www.diva-portal.org/smash/get/diva2:837867/FULLTEXT01.pdf)
+- [ ] [Synthesis of Component and Connector Models from Crosscutting Structural Views](https://sci-hub.se/10.1145/2491411.2491414)
 - [ ] [Software architecture in industrial applications](https://dl.acm.org/doi/10.1145/225014.225033)
 - [ ] [Architectural mismatch or why it's hard to build systems out of existing parts](https://dl.acm.org/doi/10.1145/225014.225031)
 - [ ] [Designing Software for Ease of Extension and Contraction](https://www.semanticscholar.org/paper/Designing-Software-for-Ease-of-Extension-and-Parnas/08d16c28d15fdab9455685d222eee67a79b7931c)
@@ -29,4 +30,3 @@
 - [ ] B. Boehm, P. Bose, E. Horowitz and M. J. Lee. Software requirements negotiation and renegotiation aids: A theory-W based spiral approach. In Proc 17 th International Conference on Software Engineering, 1994. 
 - [ ] D. E. Perry and A. L. Wolf. Foundations for the study of software architecture. ACM SIGSOFT Software Engineering Notes, 17(4):40-52, October 1992. 
 - [ ] D. Garlan and M. Shaw. An Introduction to software architecture. In Advances in Software Engineering and Knowledge Engineering, pages 1-39, Singapore, 1993. World Scientific Publishing Company. 
-- [ ] 
