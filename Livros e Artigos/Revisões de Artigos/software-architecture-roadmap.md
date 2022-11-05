@@ -40,3 +40,13 @@ garlan@cs.cmu.edu
   - **Evolução**: Os desenvolvedores e gerentes de projeto podem identificar os principais impactos de uma mudança em um sistema projetado. Ajuda a estimar com mais precisão os custos de uma modificação. 
   - **Analise**: Ajuda a analisar os atributos de qualidade, restrições, dependencias, etc.
   - **Gerenciamento**: Avaliação crítica de um arquitetura normalmente leva a uma compreensão muito mais clara dos requisitos, estratégias de implementação, e riscos potenciais
+
+## Arquitetura de software em um contexto do passado
+
+- Na arquitetura, há 10 anos atrás, foi um grande caso ad-hoc
+- Baseavam-se em construção de diagramas informais de blocos e linhas
+- As escolhas arquiteturais foi feita de maneira equivocada, baseando-se em projetos existentes
+- Entretando, apesar de sua informalidade, a arquitetura era fundamental para o projeto de um sistema. As pessoas passaram compreender a importância que o projeto arquitetônico desempeha
+- Alguns autores identificaram alguns principios de arquitetura e design e passaram a criar um vocabulário e ferramentas que ajudassem o trabalho do arquiteto
+- Na indústria, duas tendências destacaram a importância da arquitetura. A primeira estava relacionada ao reconhecimento de um repertório compartilhado de métodos, técnicas, padrões e idiomas para estruturação de sistemas complexo. Permitia que designers descreve-se sistemas complexos usando abstrações. A segunda tendência foi a preocupação de semelhança em domínios específicos para fornecer estruturas reutilizaveis. Como por exemplo, protocolos de comunicação (que permitem que os fornecedores interoperem por fornecendo serviços em diferentes camadas de abstração), linguagems de programação (que exploram os padrões comuns de processamento de informações de negócios) e interfaces de usuários como ferramentas de desenvolvimento e frameworks.
+
