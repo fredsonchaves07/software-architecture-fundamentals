@@ -41,7 +41,7 @@ garlan@cs.cmu.edu
   - **Analise**: Ajuda a analisar os atributos de qualidade, restrições, dependencias, etc.
   - **Gerenciamento**: Avaliação crítica de um arquitetura normalmente leva a uma compreensão muito mais clara dos requisitos, estratégias de implementação, e riscos potenciais
 
-## Arquitetura de software em um contexto do passado
+## Arquitetura de software no passado
 
 - Na arquitetura, há 10 anos atrás, foi um grande caso ad-hoc
 - Baseavam-se em construção de diagramas informais de blocos e linhas
@@ -50,3 +50,31 @@ garlan@cs.cmu.edu
 - Alguns autores identificaram alguns principios de arquitetura e design e passaram a criar um vocabulário e ferramentas que ajudassem o trabalho do arquiteto
 - Na indústria, duas tendências destacaram a importância da arquitetura. A primeira estava relacionada ao reconhecimento de um repertório compartilhado de métodos, técnicas, padrões e idiomas para estruturação de sistemas complexo. Permitia que designers descreve-se sistemas complexos usando abstrações. A segunda tendência foi a preocupação de semelhança em domínios específicos para fornecer estruturas reutilizaveis. Como por exemplo, protocolos de comunicação (que permitem que os fornecedores interoperem por fornecendo serviços em diferentes camadas de abstração), linguagems de programação (que exploram os padrões comuns de processamento de informações de negócios) e interfaces de usuários como ferramentas de desenvolvimento e frameworks.
 
+## Arquitetura de software atualmente
+
+- As empresas confiam nas revisões de projetos arquitetônicos como uma etapa crítica no processo de desenvolvimento
+- As soluções tecnológicas voltadas para design e arquitetura de software aumentaram
+- Três dos avanços importantes:
+ - Desenvolvimento de linguagens e ferramentas
+ - Surgimento de padrões arquitetônico
+ - Compartilhamento dos conhecimentos de arquitetura de software
+
+### Linguagem de Descrição de arquitetura e ferramentas
+
+- A informalidade dos diagramas em projetos apresentam uma série de problemas como a compreensão dos simbolos
+- Poucas ferramentas que ajudam os projetistas
+- Vários pesquisadores da indústria e academia desenvolveram notações formais para representar projetos de arquitetura de software
+- Conhecido como "Architecture Description Languages" (ADLs)
+- Exemplos de ADLs incluem Adage, Aesop, Darwin, Rapide, SADL, Unicorn, Meta-H e Wright
+- Cada uma delas tem recursos diferentes que pode ser usado para finalidades distintas
+- Controle de aviação, transmissão de mensagens distribuídas, sistemas de interface de usuário, simulações de projetos arquitetônicos são alguns dos recursos que as ADLs provem
+- Alguns pesquisadores passaram a olhar também em ferramentas que integram as ADLs existentes
+- Tem havido um interesse considerável em usar notações de projeto de objetos de propósito geral para modelagem arquitetônica
+- ADLs podem ser mapeados diretamente em uma notação UML
+
+![Captura de tela de 2022-11-08 19-58-49](https://user-images.githubusercontent.com/43495376/200694282-5053beca-ce0e-4835-9a89-6e4da53e7b5b.png)
+
+- O caminho A-D é usado quando se tem ADL como modelo
+- O caminho B-E é usado quando a UML é usada como notação de modelagem
+- O caminho A-C-E, é aquele em que uma arquitetura é representada pela primeira vez em uma ADL, mas depois transformada em UML antes de produzir uma implementação.
+- UML é útil para representar modelos de orientação a objetos mas pode ser ruim por não apresentar conceitos arquitetônicos
