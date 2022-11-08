@@ -29,4 +29,8 @@
 - [ ] J. Magee, N. Dulay, S. Eisenbach and J. Kramer. Specifying distributed software architectures. In Proceedings of the Fifth European Software Engineering Conference, ESEC95, September 1995.
 - [ ] B. Boehm, P. Bose, E. Horowitz and M. J. Lee. Software requirements negotiation and renegotiation aids: A theory-W based spiral approach. In Proc 17 th International Conference on Software Engineering, 1994. 
 - [ ] D. E. Perry and A. L. Wolf. Foundations for the study of software architecture. ACM SIGSOFT Software Engineering Notes, 17(4):40-52, October 1992. 
-- [ ] D. Garlan and M. Shaw. An Introduction to software architecture. In Advances in Software Engineering and Knowledge Engineering, pages 1-39, Singapore, 1993. World Scientific Publishing Company. 
+- [ ] D. Garlan and M. Shaw. An Introduction to software architecture. In Advances in Software Engineering and Knowledge Engineering, pages 1-39, Singapore, 1993. World Scientific Publishing Company.
+- [ ] N. Medvidovic and R. N. Taylor. Architecture description languages. In Software Engineering ESEC/FSE97, Lecture Notes in Computer Science, Vol. 1301, Zurich, Switzerland, Sept 1997. Springer
+- [ ] C. Hofmeister, R. L. Nord and D. Soni. Describing software architecture with UML. In Proceedings of the First Working IFIP Conference on Software Architecture (WICSA1), San Antonio, TX, February 1999.
+- [ ] N. Medvidovic and D. S. Rosenblum. Assessing the suitability of a standard design method for modeling software architectures. In Proceedings of the First Working IFIP Conference on Software Architecture (WICSA1), San Antonio, TX, February 1999.
+- [ ] D. Garlan, A. J. Kompanek and P. Pinto. Reconciling the needs of architectural description with objectmodeling notations. Technical report, Carnegie Mellon University, December 1999. 
