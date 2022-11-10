@@ -78,3 +78,22 @@ garlan@cs.cmu.edu
 - O caminho B-E é usado quando a UML é usada como notação de modelagem
 - O caminho A-C-E, é aquele em que uma arquitetura é representada pela primeira vez em uma ADL, mas depois transformada em UML antes de produzir uma implementação.
 - UML é útil para representar modelos de orientação a objetos mas pode ser ruim por não apresentar conceitos arquitetônicos
+
+### Linhas de produtos e padrões
+
+- Deve-se pensar em uma arquitetura reutilizavel que pode ser usada em cada desenvolvimento de padrão
+- O autor comenta que existe 2 abordagem em relação a o desenvolvimento de um produto. Abordagem de linha de produtos e de produtos único
+- A abordagem de linha de produtos requer diferentes métodos de desenvolvimento
+- Em um produto único, a arquitetura deve ser avaliada apenas com respeito aos requisitos desse produto
+- Produtos individuais podem ser construidos com uma arquitetura diferente
+- Em uma abordagem de linha de produto deve-se considerar os requisitos para familia de sistemas e o produto único. Ou seja, regras e constraints também devem ser induzidas em um produto único. 
+
+![Captura de tela de 2022-11-09 22-50-28](https://user-images.githubusercontent.com/43495376/200980790-1ff5225e-9b5e-40b0-abc1-34ec9c2b96f0.png)
+
+- Abordagem de linhas de produto ainda não é muito difundida
+- Ainda estão sendo analisados os beneficios de uma abordagem de linha produtos
+- Assim como as linhas de produtos, a integração entre diversos fornecedores exigem estruturas de arquitetura que permitem que o desenvolvedor configure serviços que utilizem as interfaces
+- Um exemplo citado pelo autor é o High Level Architecture (HLA) para simulação distribuida que permite a integração de simulações produzido por diversos fornecedores.
+- Provê uma interface padrão que diversos fornecedores podem implementar
+- Além disso, os recursos exige um conjunto de regras e restrições na qual os fornecedores que usam a interface devem observar
+- Outro exemplo, é a arquitetura Java que provê interfaces que incluem transações, persistência e segurança
