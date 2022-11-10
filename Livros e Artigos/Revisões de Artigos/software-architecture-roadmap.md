@@ -114,3 +114,14 @@ garlan@cs.cmu.edu
 - Embora arquitetura de software vem sendo discutida nos últimos anos, ainda não é uma disciplina que é ensinada e praticada na indústria de software
 - Uma das justificativas para isso é que a base tecnológica para o projeto de arquitetura ainda é imaturo
 - No entanto, o desenvolvimento de software vem mudando muito rápido. Essas mudanças promentem ter impacto na forma como arquitetura é praticada
+
+### Construção x integração de sistemas
+
+- Devido a mudanças nas estratégias time-to-market, é mais viável integrar e/ou utilizar soluções existentes
+- As empresas optam em integrar ou adquirir o sistema do que simplesmente desenvolver
+- Para algumas empresas, a aquisição e/ou fusão é a principal via de crescimento
+- Há uma série de consequências pra arquitetura que podem ser descritas as seguir:
+  - Com a popularização do desenvolvimento "baseado em componentes", aumentará a necessidade de padrões. Escolher componentes que integram com arquiteturas como COM, JavaBeans ou CORBA, os problemas de incompatibilidade podem ser reduzidos
+  - Exigirá padrões de arquitetura de alto nível. Engenharia baseada em componentes, uma mudança que enfatizará o papel de integrações específicas
+  - Subcontratados precisará garantir a compatibilidade com linha de produtos
+  - Esta têndencia está levando a padronização de notações entre os fornecedore
