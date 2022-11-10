@@ -125,3 +125,14 @@ garlan@cs.cmu.edu
   - Exigirá padrões de arquitetura de alto nível. Engenharia baseada em componentes, uma mudança que enfatizará o papel de integrações específicas
   - Subcontratados precisará garantir a compatibilidade com linha de produtos
   - Esta têndencia está levando a padronização de notações entre os fornecedore
+
+### Computação centrada em rede
+
+- Existe uma tendência para redes de computadores
+- Cada vez mais, o computador e uma variedade de outras interfaces (dispositivos portáteis, laptops, telefones) são usados principalmente como meio que fornece acesso a dados remotos e computação
+- Promove a mobilidade do usuário por meio de acesso as informações e serviços em qualquer lugar
+- Esta tendência apresenta consequências tanto para engenharia de software como também para arquitetura de software:
+  - Não há controle pois os sites e sistemas são independentes e usam a internet como meio centralizador
+  - Para cada tipo de sistema, novos desafios para arquitetura de software passam a surgir
+
+
