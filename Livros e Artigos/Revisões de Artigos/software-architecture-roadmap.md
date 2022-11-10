@@ -133,6 +133,11 @@ garlan@cs.cmu.edu
 - Promove a mobilidade do usuário por meio de acesso as informações e serviços em qualquer lugar
 - Esta tendência apresenta consequências tanto para engenharia de software como também para arquitetura de software:
   - Não há controle pois os sites e sistemas são independentes e usam a internet como meio centralizador
-  - Para cada tipo de sistema, novos desafios para arquitetura de software passam a surgir
+  - Para cada tipo de sistema, novos desafios para arquitetura de software passam a surgir como otimização dos recursos em rede, arquiteturas distribuidas, problemas de segurança etc.
 
+### Computação pervasiva
 
+- Os dispositivos estarão conectados no meio humano sem que seja perceptível
+- Aumentará o número de dispositivos móveis
+- Questões como perfomance e otimização de reserva de energia do dispositivo, arquiteturas mais flexiveis enquanto garante processamento ininterrupto, mais mobilidade para o usuário são alguns dos desafios para a arquitetura de software
+- 
