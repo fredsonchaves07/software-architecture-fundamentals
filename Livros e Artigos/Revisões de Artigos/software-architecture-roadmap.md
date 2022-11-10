@@ -108,3 +108,9 @@ garlan@cs.cmu.edu
 - Outros estilos comuns incluem arquitetura cliente e servidor, orientado a eventos, baseado em objetos.
 - Cada estilo possui uma finalidade para um determinado contexto
 - A documentação desses estilos é importante para que surjam outros padrões
+
+## Arquitetura de software no futuro
+
+- Embora arquitetura de software vem sendo discutida nos últimos anos, ainda não é uma disciplina que é ensinada e praticada na indústria de software
+- Uma das justificativas para isso é que a base tecnológica para o projeto de arquitetura ainda é imaturo
+- No entanto, o desenvolvimento de software vem mudando muito rápido. Essas mudanças promentem ter impacto na forma como arquitetura é praticada
