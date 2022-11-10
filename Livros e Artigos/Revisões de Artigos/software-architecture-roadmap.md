@@ -97,3 +97,14 @@ garlan@cs.cmu.edu
 - Provê uma interface padrão que diversos fornecedores podem implementar
 - Além disso, os recursos exige um conjunto de regras e restrições na qual os fornecedores que usam a interface devem observar
 - Outro exemplo, é a arquitetura Java que provê interfaces que incluem transações, persistência e segurança
+
+### Compartilhamento de conhecimento de arquitetura
+
+- Um dos primeiros impedimentos para o surgimento da arquitetura e design de softwares foi a falta de uma base de conhecimento sobre o assunto
+- Segundo autor, houve uma melhora tendo em vista que existe livros, cursos e artigos que falam do assunto
+- Um assunto comum entre os livros e cursos é o uso de padrões e estilos arquiteturais
+- Padrões e estilos arquiteturais definem regras e restrições de como é usado o vocabulário
+- Por exemplo, um estilo pipe-and-filter pode especificar vocabulário em que os componentes de processamento são dados transformadores (filter) e as interações são os "tubos", fluxo de informação (pipe)
+- Outros estilos comuns incluem arquitetura cliente e servidor, orientado a eventos, baseado em objetos.
+- Cada estilo possui uma finalidade para um determinado contexto
+- A documentação desses estilos é importante para que surjam outros padrões
