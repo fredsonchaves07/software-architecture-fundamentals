@@ -140,4 +140,12 @@ garlan@cs.cmu.edu
 - Os dispositivos estarão conectados no meio humano sem que seja perceptível
 - Aumentará o número de dispositivos móveis
 - Questões como perfomance e otimização de reserva de energia do dispositivo, arquiteturas mais flexiveis enquanto garante processamento ininterrupto, mais mobilidade para o usuário são alguns dos desafios para a arquitetura de software
-- 
+
+## Conclusão
+
+- Assuntos relacionados a arquitetura de software tende a crescer
+- Novos padrões arquiteturais são necessário para o melhor desenvolvimento de software
+- A Arquitetura possui papel importante no desenvolvimento de software pois garante compreensão, reuso, desenvolvimento, evolução, analise e gerenciamento
+- Novos desafios para arquitetura de software surgem a partir que novos elementos e tecnologia.
+- Mesmo que existam cursos e livros sobre arquitetura de software, ainda não é vista como uma disciplina da engenharia de software
+- O artigo tenta mostrar um visão geral e o contexto da arquitetura de software no passado, atualmente e futuro.
