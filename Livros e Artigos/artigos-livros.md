@@ -6,6 +6,7 @@
 - [ ] Just Enough Software Architecture A Risk-Driven Approach
 - [ ] Pattern-Oriented Software Architecture, A System of Patterns
 - [ ] E. Rechtin. Systems architecting: Creating and Building Complex Systems. Prentice Hall, 1991. 
+- [ ] C. Szyperski. Component Software: Beyond ObjectOriented Programming. Addison-Wesley, 1998
 
 
 ## Artigos
@@ -38,3 +39,4 @@
 - [ ] S. Bachinsky, L. Mellon, G. Tarbox, and R. Fujimoto. RTI 2.0 architecture. In Proceedings of the 1998 Spring Simulation Interoperability Workshop, 1998.
 - [ ] M. Shaw and P. Clements. A field guide to boxology: Preliminary classification of architectural styles for software systems. In Proceedings of COMPSAC 1997, August 1997.
 - [ ] D. Garlan, R. Allen and J. Ockerbloom. Architectural mismatch: Why reuse is so hard. IEEE Software, 12(6):17-28, November 1995. 
+- [ ] Mary Shaw. Architectural Requirements for Computing with Coalitions of Resources. 1 st Working IFIP Conf. on Software Architecture, Feb 1999
