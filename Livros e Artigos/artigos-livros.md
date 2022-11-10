@@ -34,3 +34,7 @@
 - [ ] C. Hofmeister, R. L. Nord and D. Soni. Describing software architecture with UML. In Proceedings of the First Working IFIP Conference on Software Architecture (WICSA1), San Antonio, TX, February 1999.
 - [ ] N. Medvidovic and D. S. Rosenblum. Assessing the suitability of a standard design method for modeling software architectures. In Proceedings of the First Working IFIP Conference on Software Architecture (WICSA1), San Antonio, TX, February 1999.
 - [ ] D. Garlan, A. J. Kompanek and P. Pinto. Reconciling the needs of architectural description with objectmodeling notations. Technical report, Carnegie Mellon University, December 1999. 
+- [ ] P. Donohoe, editor. Software Architecture: TC2 First Working IFIP Conference on Software Architecture (WICSA1). Kluwer Academic Publishers, 1999
+- [ ] S. Bachinsky, L. Mellon, G. Tarbox, and R. Fujimoto. RTI 2.0 architecture. In Proceedings of the 1998 Spring Simulation Interoperability Workshop, 1998.
+- [ ] M. Shaw and P. Clements. A field guide to boxology: Preliminary classification of architectural styles for software systems. In Proceedings of COMPSAC 1997, August 1997.
+- [ ] D. Garlan, R. Allen and J. Ockerbloom. Architectural mismatch: Why reuse is so hard. IEEE Software, 12(6):17-28, November 1995. 
