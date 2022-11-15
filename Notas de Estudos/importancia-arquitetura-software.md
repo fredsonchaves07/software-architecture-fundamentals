@@ -26,4 +26,22 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 - Se o reuso seja importante para o desenvolvimento de sistema, então deve-se em pensar em componentes reutilizaveis e restringir o acomplamento
 - A arquitetura por si só não garante o funcionamento correto dos atributos de qualidade
 - Existem outros elementos que vão desde a concepção da arquitetura, codificação, implementação, testes e deploy da aplicação. Esses elementos afeta a qualidade do sistema
-- "O arquitetura dá, a implementação pode tirar"
+- "O que arquitetura dá, a implementação pode tirar"
+
+## Gerenciamento de mudanças
+
+- Capacidade de modificação. É um atributo de qualidade que define a facilidade com que as mudanças podem ser feitas no sistema.
+- 80% do custo total de um sistema de software ocorre após a implantação
+- A maioria dos programadores e design de software estão trabalhando na manutenção do que desenvolvendo novos software
+- Todos os sistemas de software mudam ao longo período
+- Novos recursos, correção de bugs, mudanças na legislação, novas restrições. Todas essas mudanças, em muitas das vezes, é repleta de dificuldades
+- Toda arquitetura é passivel de mudança em três categorias (local, não local e arquitetural)
+  - Mudanças locais pode ser realizada modificando um único elemento - por exemplo, adicionar uma nova regra de negócio
+  - Uma mudança não local requer modificações em vários elementos que não altera a estrutura arquitetônica do sistema. Por exemplo, adição de novas regras e campo novo no banco de dados
+  - Mudanças arquiteturais sao alterações que afetam o funcionamento do sistema e a interações entre os elementos. Requer provavelmente mudança em todo o sistema. Por exemplo, mudança de um sistema single-thread para multi-thread
+- As mudanças locais são mais desejadas
+- Uma arquitetura eficaz é que alterações mais comuns são locais, ou seja, mais faceis de serem realizadas
+- Mudanças não locais não são desejadas com uma frequência maior
+- Mudanças arquiteturais exigem um esforco grande e necessita uma analise profunda para identificar quais impactos podem ocorrer
+- Gerenciar mudanças do sistema é uma das atribuições do arquiteto de software.
+- Se não der muita atenção em manter a integridade conceitual da arquitetura então certamente acumulara os débitos técnicos
