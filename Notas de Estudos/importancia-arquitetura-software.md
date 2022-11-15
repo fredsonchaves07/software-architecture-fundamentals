@@ -45,3 +45,8 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 - Mudanças arquiteturais exigem um esforco grande e necessita uma analise profunda para identificar quais impactos podem ocorrer
 - Gerenciar mudanças do sistema é uma das atribuições do arquiteto de software.
 - Se não der muita atenção em manter a integridade conceitual da arquitetura então certamente acumulara os débitos técnicos
+
+## Qualidade do sistema
+
+- É possível fazer previsões de qualidade sobre um sistema baseando-se apenas em uma avaliação da arquitetura
+- A arquitetura em grande parte determina as qualidades do sistema
