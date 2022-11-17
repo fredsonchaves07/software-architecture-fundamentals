@@ -50,3 +50,16 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 
 - É possível fazer previsões de qualidade sobre um sistema baseando-se apenas em uma avaliação da arquitetura
 - A arquitetura em grande parte determina as qualidades do sistema
+
+## Comunicação entre as partes interessadas
+
+- A arquitetura representa uma abstração que pode ser entendida por todas as pessoas interessadas ou responsáveis pelo sistema
+- Ajuda no processo de entendimento para as pessoas não técnica
+- Cada stakeholder (Cliente, usuário, gerentes de projetos, analistas de QA, Desevolvedores) preocupa-se com diferentes características do sistema:
+  - O usuário preocupa-se na perfomance, segurança e disponibilidade da aplicação
+  - O cliente (que paga pelo sistema) preocupa-se com que arquitetura seja implementada dentro do prazo e de acordo com o orçamento
+  - O gerente preocupa-se com que a arquitetura permita que as equipes trabalhem sem impedimentos atendendo os prazos e custos estimados.
+  - O arquiteto preocupa-se com as estratégias para atingir todos esses objetivos
+
+- A arquitetura provê uma linguagem comum em que diferentes situações podem ser entendidas, negociadas e resolvidas
+- Sem essa linguagem fica dificil tomar as primeiras decisões em um sistema grande e complexo por exmeplo
