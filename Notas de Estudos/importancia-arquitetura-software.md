@@ -62,4 +62,20 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
   - O arquiteto preocupa-se com as estratégias para atingir todos esses objetivos
 
 - A arquitetura provê uma linguagem comum em que diferentes situações podem ser entendidas, negociadas e resolvidas
-- Sem essa linguagem fica dificil tomar as primeiras decisões em um sistema grande e complexo por exmeplo
+- Sem essa linguagem fica dificil tomar as primeiras decisões em um sistema grande e complexo por exemplo
+
+## Decisões iniciais de arquitetura
+
+- Decisões que impactam na vida útil e desenvolvimento do sistema
+- Mesmo antes de um quadro ser pintado, o artista decide qual material utilizar (tinta a óleo, giz de cera, tipo de quadro)
+- Uma vez a imagem iniciada, outras decisões são imediatamente tomadas
+- Um projeto de arquitetura pode ser visto como um conjunto de decisões
+- Alterar uma decisão inicial pode causar um efeito cascata
+- Quais as primeiras decisões a serem consideradas na arquitetura?
+  - O sistema será executado em um processador ou será distribuído em vários processadores? 
+  - O software será em camadas? Se sim, quantas camadas haverá? O que irá cada um faz?
+  - Os componentes se comunicarão de forma síncrona ou assíncrona? Irão eles interagir transferindo controle ou dados, ou ambos?
+  - As informações que trafegam pelo sistema serão criptografadas?
+  - Qual sistema operacional usaremos?
+  - Qual protocolo de comunicação vamos escolher?
+- Decisões como essas começam a dar corpo a algumas das estruturas da a arquitetura e suas interações.
