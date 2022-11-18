@@ -87,3 +87,12 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 - Cada elemento deve cumprir também a sua responsabilidade
 - Se um sistema tiver como atributo de qualidade o desempenho por exemplo, o arquiteto deverá analisar os elementos envolvidos que afetam diretamente ou não o desempenho
 - O arquiteto deve está envolvido nas implementações das funcionalidades para que atendem as restrições de implementação e não afetem o atributo de qualidade
+- O arquiteto não precisa ser especialistas em todos os aspectos de design de algoritmos ou complexidade de uma linguagem de programação. Deve ter uma noção minima para que seja possível projetar algo que não seja dificil de construir
+- Arquitetos, no entanto, são as pessoas responsáveis por estabelecer, analisar e fazer cumprir asdecisões arquitetônicas e trade-offs
+
+## Influências na estrutura organizacional
+
+- Como a arquitetura inclui a mais ampla decomposição do sistema, é normalmente usado como base para divisão das equipes de desenvolvimento
+- A arquitetura dita como vai ser as equipes de planejamento, desenvolvimento. Define canais de comunicação, controle de configuração, estruturas de arquivos banco de dados, sistemas de versionamento, plano de integração e testes e muitos outros elementos
+- Influencia na estrutura organizacional da empresa para que os resultados sejam atingidos
+- 
