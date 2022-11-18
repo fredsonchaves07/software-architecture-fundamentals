@@ -104,3 +104,15 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 - Como primeiro incremento, podemos definir a parte esquelética do sistema ou até mesmo configuração da infraestrutura, definindo como os elementos inicializam, se comunicam, compartilham dados, acessam recursos, relatam erros, registram as atividades etc. Ou seja, tais recursos podem está presente enquanto grande parte da funcionalidade do sistema ainda não esteja implementada.
 - Construir a infraestrutura e construir a funcionalidade do aplicativo pode ir de mãos dadas.
 - ***Projete e construa uma pequena infraestrutura para dar suporte a uma pequena funcionalidade. Repita até terminar***
+
+## Custos e prazos estimados
+
+- As estimativas de custo e cronograma são uma ferramenta importante para o gerente de projeto
+- Ajudam o gerente de projeto a adquirir recursos necessários, bem como monitorar o andamento do projeto
+- O arquiteto ajuda o gerente a criar estimativas de custos e cronograma no inicio do ciclo de vida do projeto
+- Cada equipe ou individuo responsavel por um item de trabalho será capaz de fazer estimativas mais precisas
+- Mas as melhores estimativas de custo e cronograma surgem de um consenso entre as estimativas de cima para baixo (criadas pelo arquiteto e pelo
+gerente de projeto) e de baixo para cima (criadas pelos desenvolvedores)
+- A discursão e negociação desses 2 tipos de estimativas criam uma visão de estimativa muito mais precisa
+- ***Quanto mais conhecimento inicial você tiver sobre o escopo, mais preciso será o custo e estimativas de conograma***
+- 
