@@ -95,4 +95,12 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 - Como a arquitetura inclui a mais ampla decomposição do sistema, é normalmente usado como base para divisão das equipes de desenvolvimento
 - A arquitetura dita como vai ser as equipes de planejamento, desenvolvimento. Define canais de comunicação, controle de configuração, estruturas de arquivos banco de dados, sistemas de versionamento, plano de integração e testes e muitos outros elementos
 - Influencia na estrutura organizacional da empresa para que os resultados sejam atingidos
-- 
+
+## Desenvolvimento incremental
+
+- A arquitetura provê desenvolvimento incremental
+- O desenvolvimento incremental é util quando queremos realizar algum tipo de validação (MVP) e evitar futuros riscos de projeto
+- A arquitetura pode servir como base para melhorias incrementais
+- Como primeiro incremento, podemos definir a parte esquelética do sistema ou até mesmo configuração da infraestrutura, definindo como os elementos inicializam, se comunicam, compartilham dados, acessam recursos, relatam erros, registram as atividades etc. Ou seja, tais recursos podem está presente enquanto grande parte da funcionalidade do sistema ainda não esteja implementada.
+- Construir a infraestrutura e construir a funcionalidade do aplicativo pode ir de mãos dadas.
+- ***Projete e construa uma pequena infraestrutura para dar suporte a uma pequena funcionalidade. Repita até terminar***
