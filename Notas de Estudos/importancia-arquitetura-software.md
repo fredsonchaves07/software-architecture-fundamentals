@@ -115,4 +115,11 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
 gerente de projeto) e de baixo para cima (criadas pelos desenvolvedores)
 - A discursão e negociação desses 2 tipos de estimativas criam uma visão de estimativa muito mais precisa
 - ***Quanto mais conhecimento inicial você tiver sobre o escopo, mais preciso será o custo e estimativas de conograma***
-- 
+
+## Modelo transferível e reutilizável
+
+- Decisões arquitetônicas podem ser reutilizaveis em vários sistemas
+- Uma linha ou familia de produtos é um conjunto de sistemas que são constuidos usando componentes compartilhados
+- A arquitetura foi projetada com as necessidades de toda a familia
+- A arquitetura define o que é fixo para todos os membros da linha de produto e o que é variável
+- As linhas de produto representam uma abordagem poderosa para o desenvolvimento de vários sistemas. Traz beneficios como mercado, curso, produtividade e qualidade do produto.
