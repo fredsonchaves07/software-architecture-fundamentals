@@ -14,7 +14,7 @@ A arquitetura de software possui papel importante no processo de desenvolvimento
 - [x] Redução da complexidade do sistema
 - [x] Integração entre os times de desenvolvimento
 
-A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os recursos dedicados à arquitetura
+A seguir, algumas maneiras úteis de usar arquitetura em um projeto, ou justificar os recursos dedicados à arquitetura
 
 ## Desabilitando ou habiltiando atributos de qualidade do sistema
 
