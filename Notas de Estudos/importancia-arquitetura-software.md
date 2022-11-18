@@ -79,3 +79,11 @@ A seguir, 13 maneiras úteis de usar arquitetura em um projeto, ou justificar os
   - Qual sistema operacional usaremos?
   - Qual protocolo de comunicação vamos escolher?
 - Decisões como essas começam a dar corpo a algumas das estruturas da a arquitetura e suas interações.
+
+## Restrições na implementação
+
+- Se você deseja que sua implementação esteja em conformidade com uma arquitetura então ela deve estar em conformidade com as decisões de design prescritas pela arquitetura
+- Deve possuir um conjunto de elementos que interagem entre si na forma prescrita pela arquitetura
+- Cada elemento deve cumprir também a sua responsabilidade
+- Se um sistema tiver como atributo de qualidade o desempenho por exemplo, o arquiteto deverá analisar os elementos envolvidos que afetam diretamente ou não o desempenho
+- O arquiteto deve está envolvido nas implementações das funcionalidades para que atendem as restrições de implementação e não afetem o atributo de qualidade
