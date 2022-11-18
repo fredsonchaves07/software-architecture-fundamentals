@@ -123,3 +123,16 @@ gerente de projeto) e de baixo para cima (criadas pelos desenvolvedores)
 - A arquitetura foi projetada com as necessidades de toda a familia
 - A arquitetura define o que é fixo para todos os membros da linha de produto e o que é variável
 - As linhas de produto representam uma abordagem poderosa para o desenvolvimento de vários sistemas. Traz beneficios como mercado, curso, produtividade e qualidade do produto.
+
+## Arquitetura permite incorporação de elementos desenvolvidos de forma independente
+
+- Desenvolvimento baseado em arquitetura muita das vezes se concentra em compor ou reunir elementos que provavelmente foram desenvolvidos separadamente ou até mesmo independente uns dos outros
+- A composição é possível pois a arquitetura define os elementos que podem ser incorporados
+- Além disso, a arquitetura restringe possíveis substituições ou adições de acordo com as interações
+- Componentes comerciais de prateleira, software de código aberto, disponível publicamente aplicativos e serviços em rede são exemplos de aplicativos desenvolvidos independentemente elementos
+- A complexidade e onipresença de integrar muitos de forma independente elementos desenvolvidos em seu sistema gerou toda uma indústria de software ferramentas, como Apache Ant, Apache Maven, MSBuild e Jenkins.
+- Essa forma de itegração gerou os seguintes benefícios
+  - Redução de tempo (Mais fácil usar uma solução pronta do que construir sua própria)
+  - Maior confiabilidade (O software amplamente utilizado deve ter seus bugs corrigidos)
+  - Menor custo (Softwares open sources que podem ser usados para amortizar o custo de desenvolvimento)
+  - Flexibilidade
