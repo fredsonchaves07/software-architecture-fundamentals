@@ -7,6 +7,9 @@
 - [ ] Pattern-Oriented Software Architecture, A System of Patterns
 - [ ] E. Rechtin. Systems architecting: Creating and Building Complex Systems. Prentice Hall, 1991. 
 - [ ] C. Szyperski. Component Software: Beyond ObjectOriented Programming. Addison-Wesley, 1998
+- [ ] Gregor Hohpe. The Software Architect Elevator: Rede ning the Architect’s Role in the Digital Enterprise. O’Reilly, 2020
+- [ ] Alistair Cockburn. Agile Software Development: The Cooperative Game. Addison-Wesley, 2006.
+- [ ] Paul Clements and Linda Northrop. Software Product Lines: Practices and Patterns. Addison-Wesley, 2016.
 
 
 ## Artigos
@@ -40,3 +43,5 @@
 - [ ] M. Shaw and P. Clements. A field guide to boxology: Preliminary classification of architectural styles for software systems. In Proceedings of COMPSAC 1997, August 1997.
 - [ ] D. Garlan, R. Allen and J. Ockerbloom. Architectural mismatch: Why reuse is so hard. IEEE Software, 12(6):17-28, November 1995. 
 - [ ] Mary Shaw. Architectural Requirements for Computing with Coalitions of Resources. 1 st Working IFIP Conf. on Software Architecture, Feb 1999
+- [ ] Melvin E. Conway. “How Do Committees Invent?” Datamation 14, no. 4 (1968): 28–31.
+- [ ] International Council on Systems Engineering, “Feature-Based Systems and Software Product Line Engineering: A Primer,” Technical ProductINCOSE-TP-2019-002-03-0404, https://connect.incose.org/Pages/Product-Details.aspx?ProductCode=PLE_Primer_2019
