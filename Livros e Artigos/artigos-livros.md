@@ -10,6 +10,7 @@
 - [ ] Gregor Hohpe. The Software Architect Elevator: Rede ning the Architect’s Role in the Digital Enterprise. O’Reilly, 2020
 - [ ] Alistair Cockburn. Agile Software Development: The Cooperative Game. Addison-Wesley, 2006.
 - [ ] Paul Clements and Linda Northrop. Software Product Lines: Practices and Patterns. Addison-Wesley, 2016.
+- [ ] Growing Object-Oriented Software, Guided by Tests
 
 
 ## Artigos
