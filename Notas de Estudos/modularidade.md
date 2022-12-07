@@ -37,9 +37,43 @@
 
 #### Coesão funcional
 
-- Cada parte do módulo está relacionada com outro e o módulo contém cada coisa essencial para funcionar
-- Um módulo funcionalmente coeso possui mais de um elemento necessários e suficientes para implementar um conceito
+- Um módulo apresenta Coesão Funcional quando suas funções internas contribuem para a execução de uma e apenas uma tarefa relacionada ao problema
 
-### Coesão sequencial
+#### Coesão sequencial
 
-- Dóis módulos interagem, onde um emite dados que se tornam a entrada para o outro
+- Dois módulos interagem, onde um emite dados que se tornam a entrada para o outro
+- Um módulo com Coesão Sequencial caracteriza-se por ser de fácil manutenção porém de baixa reutilização, pois contém atividades que são utilizadas juntas
+
+#### Coesão comunicacional
+
+- Dois módulos formam uma cadeia de comunicação onde cada um opera em informações
+- Exemplo: adicione um registro ao banco de dados e envie um email com essas informações
+- Módulos com Coesão Comunicacional e Sequencial são semelhantes, pois ambos contém atividades organizadas em torno dos dados do problema original.
+- A principal diferença entre eles é que um módulo sequencialmente coeso opera como uma linha de montagem onde suas atividades são executadas em uma ordem específica. Já em um módulo com coesão comunicacional a ordem de execução não é importante
+
+#### Coesão procedural
+
+- Os módulos executam o código em uma ordem específica
+- O controle flui de uma atividade para outra
+
+#### Coesão temporal
+
+- Os módulos são relacionados com base em uma dependência de tempo
+- Exemplo: um módulo que finaliza ou salva uma determinada tarefa (Não relacionado a atividade)
+
+#### Coesão lógica
+
+- Estão relacionados logicamente mas não funcionalmente
+- Um exemplo desse tipo de coesão é o pacote java `StringUtils`. Possui funcionalidades que operam em String porém não necessariamente se relaciona com as Strings
+- Possuem funções internas que contribuem para as atividades da mesma categoria geral
+
+#### Coesão coincidental
+
+- Representa a forma mais negativa de coesão
+- Os elementos não estão relacionados 
+
+#### Forma de identificar a coesão
+
+- A figura abaixo mostra uma estratégia para identificar o tipo de coesão de um determinado módulo
+
+![fig1](https://user-images.githubusercontent.com/43495376/206065815-8cf0e4aa-b1da-4eca-9b19-587fbe58b804.png)
