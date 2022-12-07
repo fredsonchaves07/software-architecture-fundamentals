@@ -72,8 +72,37 @@
 - Representa a forma mais negativa de coesão
 - Os elementos não estão relacionados 
 
-#### Forma de identificar a coesão
+### Forma de identificar a coesão
 
 - A figura abaixo mostra uma estratégia para identificar o tipo de coesão de um determinado módulo
 
 ![fig1](https://user-images.githubusercontent.com/43495376/206065815-8cf0e4aa-b1da-4eca-9b19-587fbe58b804.png)
+
+
+- A coesão é uma métrica menos precisa que o acoplamento. Dependendo dos critérios adotados pelo arquiteto
+- Existe um método criado por cientistas da computação que avalia a falta de coesão conhecido como chidamber and kemerer object-oriented metrics (LCOM)
+
+### Métrica LCOM (The Chidamber and Kemerer Lack of Cohesion in Methods)
+- Inclui recursos como métricas de código como complexidade ciclomática além de avaliação de acplamento.
+- A métrica LCOM garante a coesão estrutural de um módulo. É apresentado na equação de versão 1
+
+![Captura de tela de 2022-12-07 13-54-50](https://user-images.githubusercontent.com/43495376/206241598-42a76590-8724-4368-b89e-d65f2d51ede4.png)
+
+- A variável `P` aumenta em um para qualquer método que não acesse um campo compartilhado específico e `q` diminui em um para métodos que compartilham um determinado campo compartilhado 
+- Em 1996 foi introduzida uma nova variação da fórmula (LCOM96B) 
+
+![Captura de tela de 2022-12-07 14-00-43](https://user-images.githubusercontent.com/43495376/206243038-7d29ab04-acb0-43e6-8b89-e8cca7d6f2af.png)
+
+- A métrica LCOM expõe o acoplamento acidental dentro das classes
+- Na figura abaixo, os campos aparecem como letra única e os métodos aparecem como blocos
+- Na classe `X` a pontuação LCOM é baixa, o que indica uma boa coesão estrutural
+- A classe `Y` no entando carece de coesão. Cada um dos pares de campo/método pode ser refatorado para as suas proprias classes
+- A classe `Z` mostra uma coesão mista. A última combinação de campo/método pode ser refatorado em sua própria classe
+
+![Captura de tela de 2022-12-07 14-29-57](https://user-images.githubusercontent.com/43495376/206249519-c6eccbf4-1bea-43b4-bd76-05c7b81f8251.png)
+
+- A métrica LCOM é útil para arquitetos que estão analisando base de código para passar de um estilo arquitetônico para outro
+- Pode ser útil na busca de classes que incidentalmente estão acoplados
+- Muitas métricas de software tem sérias deficiencias e o LCOM não está imune
+
+
