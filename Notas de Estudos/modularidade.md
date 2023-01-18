@@ -105,4 +105,34 @@
 - Pode ser útil na busca de classes que incidentalmente estão acoplados
 - Muitas métricas de software tem sérias deficiencias e o LCOM não está imune
 
+### Acoplamento
 
+- Existem diversas ferramentas que analisa o acoplamento em base de código baseado em teoria dos grafos
+- Em 1979, Edward Yourdon e Larry Constantine definiram, em seu livro, muitos conceitos centrais sobre acoplamento e coesão incluindo métricas de acoplamento aferente e eferente
+- Acomplamento aferente mede o número de entradas, conexões a um artefato de código (componente, classe, função e assim por diante)
+- Acomplameno eferente mede as conexões de saida para outros artefatos de código.
+- Existem ferramentas que permite o arquiteto analisar as características de acoplamento de código para auxiliar na compreensão de uma base de código
+- O termo "Aferente" e "Eferente" os autores pegaram emprestados da matemática
+
+### Abstração, instabilidade e distancia da sequência principal
+
+- Várias outras métricas permitem uma avaliação mais profunda
+- Métricas criadas por Robert C Martin para um livro C++
+- Abstração é a proporção de artefatos abstratos (Classes abstratas, interfaces e assim por diante) para artefatos concretos (Implementação)
+- Representa uma medida de abstração x implementação
+- Abaixo a fórmula para abstração
+
+![Captura de tela de 2023-01-17 21-09-29](https://user-images.githubusercontent.com/43495376/213039431-6c533937-c6d2-4246-9090-c7ccba03990c.png)
+
+- m(a) representa os elementos abstratos
+- m(c) representa os elementos de implementação
+
+- Outra métrica derivada instabilidade é definida como a proporção de acoplamento eferente para a soma do acoplamento eferente e aferente
+
+![Captura de tela de 2023-01-17 21-14-38](https://user-images.githubusercontent.com/43495376/213041666-2f255659-eefc-4872-bc0d-972a9d83b901.png)
+
+- c(e) representa o acoplamento eferente (saida)
+- c(a) representa o acoplamento aferente (entrada)
+
+- A métrica de instabilidade determina a volatilidade da base de código
+- Uma base de códig que exibe altos graus de instabilidade quebra mais facilmente quando alterada devido ao auto acoplamento
