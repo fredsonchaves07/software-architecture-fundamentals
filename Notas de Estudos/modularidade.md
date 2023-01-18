@@ -135,4 +135,31 @@
 - c(a) representa o acoplamento aferente (entrada)
 
 - A métrica de instabilidade determina a volatilidade da base de código
-- Uma base de códig que exibe altos graus de instabilidade quebra mais facilmente quando alterada devido ao auto acoplamento
+- Uma base de código que exibe altos graus de instabilidade quebra mais facilmente quando alterada devido ao auto acoplamento
+
+### Distância da sequencia principal
+
+- Uma das poucas métricas holisticas 
+- Baseada em instabilidade e abstração
+
+![Captura de tela de 2023-01-18 15-11-08](https://user-images.githubusercontent.com/43495376/213260940-67d9a028-4250-49de-b9e4-4fdf7dd21486.png)
+
+- Na equação, A = abstração, I = instabilidade
+- Observe que tanto a abstração quanto a instabilidade são frações cujos resultados sempre cairão entre 0 e 1
+
+![image RYHXY1](https://user-images.githubusercontent.com/43495376/213261250-0b390ebe-d10a-4094-9180-5d5573829235.png)
+
+- Define a relação ideal entre abstração e instabilidade
+- Classes que aproximam-se dessa linha é o cenário ideal, mais equilibrada é a classe
+- Superior a linha é conhecido como zona de inutilidade, o código que é muito abstrato torna-se dificil de usar
+- Por outro lado, a linha inferior esquerda "entra na dor". Muita implementação com abstração insuficiente tornando frágil e dificil de manter
+
+![image 9HE0Y1](https://user-images.githubusercontent.com/43495376/213263029-e3681950-268b-4626-9005-3aeabd4e864e.png)
+
+- Existem ferramentas em muitas plataformas para fornecer essas medidas
+
+### Conascencia
+
+- Dois componentes são conascentes se uma mudança em um exigir que outro seja modificados para manter a correção
+- Em 1996, Meilir Pages-Jones publicou em seu livro *What Every Programmer Should Know About Object-Oriented Design* dois tipos de conascencia (estática e dinâmica)
+
