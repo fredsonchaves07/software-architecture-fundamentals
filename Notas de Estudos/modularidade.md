@@ -162,4 +162,76 @@
 
 - Dois componentes são conascentes se uma mudança em um exigir que outro seja modificados para manter a correção
 - Em 1996, Meilir Pages-Jones publicou em seu livro *What Every Programmer Should Know About Object-Oriented Design* dois tipos de conascencia (estática e dinâmica)
+- Ele desenvolveu 2 tipos de conascência (estática e dinamica)
 
+#### Conascencia estática
+
+- Refere-se ao nível do código fonte (oposição ao tempo de execução)
+- Refinamento do acoplamento aferentes e eferentes
+
+##### *Conascencia de nome (CoN)*
+
+- Vários componentes devem concordar com o nome de uma entidade
+- Nomes de métodos representam a maneira mais comum de acoplamento de bases de código
+
+##### *Conascencia de tipo (CoT)*
+
+- Vários componentes devem concordar com o tipo de uma entidade
+- Refere-se a facilidade comum em muitas linguagens de tipagem estática de limitar variáveis e parâmetros específicos
+- Algumas linguagens de tipagem dinâmica também oferece esse tipo de conascencia como Clojure e Clojure Spec
+
+##### *Conascencia do significado (CoM) ou Conascencia de convenção (CoC)
+
+- Vários componentes devem concordar com o significado de valores específicos.
+- Caso comum deste tipo de conascencia em bases de código é números codificados em vez de constantes
+- Por exemplo, TRUE = 1 e FALSE = 0;
+- Imagine os problemas se algúem inverter os valores
+
+##### *Conascencia de Posição (CoP)
+
+- Varios componentes devem concordar com a ordem dos valores
+- Este é um problema com valores de parâmetro para chamadas de métodos e função
+- Imagina um método void updateSeat(String name, String seatLocation), seja passado os valores ("14D", "Joao")
+- Semâtica não está correta mesmo que os tipos sejam iguais
+
+##### *Conascencia de algoritmo (CoA)
+
+- Vários componentes devem concordar com um algoritmo em particular
+- Um caso comum para este tipo de conascencia ocorre quando um desenvolvedor define um algoritmo de hash de segurança que deve ser executado no servidor e no cliente e produzir resultados idênticos para autenticar o usuário
+- Representa uma alta forma de acoplamento, se quaisquer um dos algoritmos alterar quaisquer detalhes ocorrerá falhas na aplicação
+
+#### Conascencia dinamica
+
+- Analisa chamadas em tempo de execução
+
+##### *Conascencia de execução (CoE)*
+
+- A ordem de execução dos vários componentes devem ser importantes
+- Considere o código abaixo
+
+```java
+  email = new Email();
+  email.setRecipient("foo@example.com");
+  email.setSender("me@me.com");
+  email.send();
+  email.setSubject("whoops");
+```
+
+- Não funcionará corretamente porque certas propriedades devem ser definidas em ordem.
+
+##### *Conascencia de tipo (CoT)*
+
+- O tempo de execução de vários componentes é importante
+- Um caso comum para este tipo de conascencia é uma condição de execução causada por 2 threads que estão em execução ao mesmo tempo afetando o resultado da operação
+
+##### *Conascencia de valorees (CoV)*
+
+- Ocorre quando vários valores se relacionam entre si e devem mudar juntos.
+- Caso mais comum para este tipo de conascencia envolve transações, especialmente em sistemas tributários. Quando um arquiteto projeta um sistema com banco de dados separados, ainda precisa atualizar um unico valor em todos os banco de dados, todos devem mudar juntos ou não
+
+##### *Conascencia de identidade (CoI)*
+
+- Ocorre quando vários componentes devem fazer referência à mesma entidade.
+- O exemplo comum desse tipo de conascência envolve duas composições independentes. Componentes que devem compartilhar e atualizar uma estrutura de dados comum, como uma fila.
+
+- A conascencia dinâmica talvez seja mais dificil de ser determinada por um arquiteto pois falta ferramentas para analisar as chamadas em tempo de execução com as mesmas eficiências com que analisamos o gráfico de chamadas
