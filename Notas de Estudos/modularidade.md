@@ -235,3 +235,40 @@
 - O exemplo comum desse tipo de conascência envolve duas composições independentes. Componentes que devem compartilhar e atualizar uma estrutura de dados comum, como uma fila.
 
 - A conascencia dinâmica talvez seja mais dificil de ser determinada por um arquiteto pois falta ferramentas para analisar as chamadas em tempo de execução com as mesmas eficiências com que analisamos o gráfico de chamadas
+
+#### Propriedade de conascencia
+
+- Algumas das propriedades de conascencia que podem ajudar os desenvolvedores e arquitetos
+
+##### *Força*
+
+- Os arquitetos determinam a força de uma conascencia a partir da facilidade que um desenvolvedor pode refatorar o tipo de acoplamento
+- Diferentes níveis de acoplamento são mais fáceis de resolver e/ou evitados conforme a figura a baixo
+
+![image JOP0Y1](https://user-images.githubusercontent.com/43495376/214333304-083a1bd8-3f73-4a11-a654-ef70ae0c6e79.png)
+
+- Arquitetos e desenvolvedores podem melhorar as características de acoplamento de sua base de código refatorando para melhores tipos de connascência.
+- Conascencia estática é mais fácil de ser analisada do que a dinâmica
+- A força de uma conascência provê um bom guia para a refatoração
+
+##### *Localidade*
+
+- Mede o quão próximo os módulos são uns dos outros
+- Formas de acoplamento que indicam acoplamento ruim quando distantes são boas quando mais próximas, ou seja quando estão no mesmo módulo.
+- O código proximal (no mesmo módulo) normalmente tem mais e mais formas de connascência do que um código mais separado (em módulos separados
+ou bases de código)
+
+##### *Grau*
+
+- Está relacionado ao tamanho do impacto
+- Graus menores de conascencia é o desejavel
+- Ter alta connascência dinâmica não é terrível se você tiver apenas alguns módulos, porém as bases de código tendem a crescer, tornando-se um grande problema
+- Page-Jones define 3 diretrizes para melhorar as conascencia em um sistema de modularidade
+1. Minimize a connascência geral dividindo o sistema em elementos encapsulados
+2. Minimize qualquer connascência restante que cruze os limites do encapsulamento
+3. Maximize a connascência dentro dos limites de encapsulamento
+
+- Jhon Weirich repopularizou o conceito de conascencia e oferece dois grandes conselhos
+
+Regra de força: converter formas fortes de connascência em formas mais fracas de connascência
+Regra de localidade: à medida que a distância entre os elementos de software aumenta, use formas mais fracas de connascência
