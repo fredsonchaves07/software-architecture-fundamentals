@@ -272,3 +272,13 @@ ou bases de código)
 
 Regra de força: converter formas fortes de connascência em formas mais fracas de connascência
 Regra de localidade: à medida que a distância entre os elementos de software aumenta, use formas mais fracas de connascência
+
+### Unificando as métricas de acoplamento e conascencia
+
+- No ponto de vista do arquiteto essas e métricas podem ser sobreposta
+- Page-Jones identifica a conascencia estática como graus de acomplamento de entrada ou saida
+- Conceitos de acoplamento de programação estruturada aparece na esquerda enquanto que as características de conascencia aparece na direita
+- O que a programação estruturada chama de acoplamento de dados (métodos e chamadas) a conascencia fornece conselhos sobre como esse acoplamento deve-se manifestar
+
+![image 2RUMZ1](https://user-images.githubusercontent.com/43495376/214638000-1ff071ff-d030-422a-983f-2b59c32fe44c.png)
+
