@@ -164,6 +164,11 @@
 - Em 1996, Meilir Pages-Jones publicou em seu livro *What Every Programmer Should Know About Object-Oriented Design* dois tipos de conascencia (estática e dinâmica)
 - Ele desenvolveu 2 tipos de conascência (estática e dinamica)
 
+![Captura de tela de 2023-01-31 23-20-06](https://user-images.githubusercontent.com/43495376/215929415-fd7882f3-e5a6-4c1b-81f3-6b55fb129b6c.png)
+
+![Captura de tela de 2023-02-01 15-49-43](https://user-images.githubusercontent.com/43495376/216136049-49f98194-6214-43fa-8857-733330152014.png)
+
+
 #### Conascencia estática
 
 - Refere-se ao nível do código fonte (oposição ao tempo de execução)
@@ -273,6 +278,11 @@ ou bases de código)
 Regra de força: converter formas fortes de connascência em formas mais fracas de connascência
 Regra de localidade: à medida que a distância entre os elementos de software aumenta, use formas mais fracas de connascência
 
+### Caminhos de refatoração
+
+![Captura de tela de 2023-02-01 15-22-38](https://user-images.githubusercontent.com/43495376/216129837-20f31024-cf1b-457e-8b79-38744c1ec5a6.png)
+
+
 ### Unificando as métricas de acoplamento e conascencia
 
 - No ponto de vista do arquiteto essas e métricas podem ser sobreposta
@@ -281,6 +291,3 @@ Regra de localidade: à medida que a distância entre os elementos de software a
 - O que a programação estruturada chama de acoplamento de dados (métodos e chamadas) a conascencia fornece conselhos sobre como esse acoplamento deve-se manifestar
 
 ![image 2RUMZ1](https://user-images.githubusercontent.com/43495376/214638000-1ff071ff-d030-422a-983f-2b59c32fe44c.png)
-
-
-![Captura de tela de 2023-01-31 23-20-06](https://user-images.githubusercontent.com/43495376/215929415-fd7882f3-e5a6-4c1b-81f3-6b55fb129b6c.png)
