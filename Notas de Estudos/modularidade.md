@@ -282,3 +282,5 @@ Regra de localidade: à medida que a distância entre os elementos de software a
 
 ![image 2RUMZ1](https://user-images.githubusercontent.com/43495376/214638000-1ff071ff-d030-422a-983f-2b59c32fe44c.png)
 
+
+![Captura de tela de 2023-01-31 23-20-06](https://user-images.githubusercontent.com/43495376/215929415-fd7882f3-e5a6-4c1b-81f3-6b55fb129b6c.png)
