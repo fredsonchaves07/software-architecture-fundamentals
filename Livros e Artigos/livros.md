@@ -9,6 +9,7 @@
 - [ ] Alistair Cockburn. Agile Software Development: The Cooperative Game. Addison-Wesley, 2006.
 - [ ] Paul Clements and Linda Northrop. Software Product Lines: Practices and Patterns. Addison-Wesley, 2016.
 - [ ] Growing Object-Oriented Software, Guided by Tests
+- [ ] Composite/Structured Design
 
 
 ## Métricas
