@@ -11,6 +11,17 @@
 - [ ] Growing Object-Oriented Software, Guided by Tests
 - [ ] Composite/Structured Design
 
+## Design e Orientação a Objetos
+
+- [ ] Fundamentals of Object-Oriented Design in UML
+- [ ] Reliable Software Through Composite Design
+- [ ] Object-Oriented Software Construction
+
+
+## Agilidade
+
+- [ ] Agile Software Development, Principles, Patterns, and Practices
+
 
 ## Métricas
 
