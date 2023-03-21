@@ -39,3 +39,37 @@
 - Arquitetos devem usar seu conhecimento do domínio do problema para descobrir essas características
 - As características explícitas da arquitetura aparecem em documentos de requisitos ou outras instruções específicas.
 - Na imagem, um suporta o outro na qual sustenta o design (Projeto como um todo)
+
+## Características arquiteturais (parcialmente) listadas
+
+- As caracteristicas variam de código baixo nível, como modularidade, a grandes preocupações operacionais como escalabilidade e segurança
+- Cada organização cria sua própria interpretação desses termos
+- Além disso, como o ecosistema de software muda constantemente, novos conceitos, termos, medidas e verificações aparecem constantemente
+- Alguns dos exemplos de características
+
+### Características operacionais de arquitetura
+
+- Abrange recursos como desempenho, escalabilidade, flexibilidade, recursos, disponibilidade e confiabilidade
+- A figura abaixo mostra algumas caracteristicas operacionais de arquitetura
+- Essas características está fortemente alinhados com as preocupações do DevOps
+
+![Captura de tela de 2023-03-21 10-50-00](https://user-images.githubusercontent.com/43495376/226626441-e2385469-3918-4643-b762-e4a26764f515.png)
+
+### Características estruturais de arquitetura
+
+- Compreende os aspectos da estrutura do código.
+- Em alguns casos o arquiteto tem responsabilidade exclusiva ou compartilhada pelas questões de qualidade de código, modularidade, acoplamento e uma série de outras avaliações.
+
+![Captura de tela de 2023-03-21 10-54-36](https://user-images.githubusercontent.com/43495376/226627808-7f506b0d-6f99-445a-bec7-138a474d2873.png)
+
+### Características transversaos de arquitetura
+
+- São características que de uma certa forma está fora ou desafia a organização.
+- Formam importantes restrições para manutenção e continuidade do projeto
+- Questões como legalidade, segurança, privacidade, uso de software pelo usuário entre outras questões
+
+![Captura de tela de 2023-03-21 10-58-30](https://user-images.githubusercontent.com/43495376/226629076-2f0a5f8b-c0d2-426a-9895-7bb7ce61974c.png)
+
+![Captura de tela de 2023-03-21 10-58-39](https://user-images.githubusercontent.com/43495376/226629111-96ac9dc8-61c9-42e6-bd10-3095ff2fb2fd.png)
+
+
