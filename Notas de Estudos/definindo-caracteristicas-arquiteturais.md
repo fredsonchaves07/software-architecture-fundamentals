@@ -72,4 +72,48 @@
 
 ![Captura de tela de 2023-03-21 10-58-39](https://user-images.githubusercontent.com/43495376/226629111-96ac9dc8-61c9-42e6-bd10-3095ff2fb2fd.png)
 
+- Alguns dos padrões definidos pela ISO que podem ser usados para características de um software
 
+#### Eficiência de desempenho
+
+- Médida de desempenho relativo a quantidade de recursos usado sob condições conhecidas
+- inclui um comportamento de tempo esperado (Medida de resposta, processamento, taxas de transferência, entre outros)
+
+#### Compatibilidade
+
+- Grau em que um produto, sistema pode trocar informações com outros produtos e sistemas
+- Está relacionado com algum tipo de integração
+
+#### Usabilidade
+
+- Qual nível de eficiência, eficacia de uso do sistema por parte do usuário? 
+- Está relacionado com o nível de manuseio pelo usuário
+
+#### Confiabilidade
+
+- Grau em que um sistema funciona sob condições especificadas para um determinado período de tempo
+- Está relacionado com segurança. tolerãncia a falhas, nível de maturidade de um sistema e capacidades de recuperação
+
+#### Segurança
+
+- Grau em que o software protege informações e dados para que pessoas ou produtos tenham acesso de acordo com o seu nível de autorização
+- Inclui características como cofidencialidade, integridade, autenticidade
+
+#### Manutetenibilidade
+
+- Capacidade de um software conseguir ser modificável. Na qual possam existir alterações com a finalidade de corrigir, melhorar e adaptar
+- Inclui características como modularidade, reusabilidade, modificabilidade
+
+#### Portabilidade
+
+- Grau em que os desenvolvedores podem transferir um sistema, produto ou componente de um hardware para outro
+
+
+## Trade-Offs e arquitetura menos pior
+
+- Recomenda-se que a aplicação suporte somente algumas das características de arquitetura que foram listadas. Pois cada uma das características suportadas requer esfoço de design e talvez suporte esturural. Além disso, cada característica de arquitetura tem um impacto sobre as outras
+- Assim, os arquitetos raramente encontram a situação em que são capazes de projetar um sistema e maximizar cada característica única da arquitetura
+- *"Nunca atire na melhor arquitetura, mas sim na menos pior arquitetura."*
+- Muitas características de arquitetura levam a soluções genéricas que tentam resolvem todos os problemas de negócios, e essas arquiteturas raramente funcionam porque o design torna-se pesado
+- Isso sugere que os arquitetos devem se esforçar para projetar arquitetura para ser tão iterativa quanto possível. Se você puder fazer alterações na arquitetura com mais facilidade, poderá se estressar menos em descobrir exatamente a coisa correta na primeira tentativa. 
+- Um dos mais importantes lições importantes do desenvolvimento de software ágil é o valor da iteração; isso é verdade em todos os níveis de desenvolvimento de software, incluindo arquitetura.
