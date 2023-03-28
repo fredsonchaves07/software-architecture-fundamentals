@@ -3,7 +3,7 @@
 - Identificar as características de arquitetura de um projeto é um dos primeiros passos a ser realizado quando queremos criar uma nova arquitetura ou validar uma arquitetura existente
 - Identificar de forma correta as características arquiteturais para um problema ou aplicação exige que um arquiteto não apenas entenda o problema do domínio como também colabore com as partes interessadas do domínio do problema para determinar o que é realmente importante
 
-## Extraindo características arquiteturais do dominio
+## Extraindo características arquiteturais a partir do dominio
 
 - Um arquiteto deve ser capaz de entender os problemas do dominio para identificar características chaves e essenciais
 - Por exemplo, a escabilidade é preocupação mais importante ou é tolerância a falhas, segurança ou desempenho?
@@ -20,3 +20,8 @@
 - A tabela abaixo mostra algumas das possíveis preocupações e características relacionadas
 
 ![Captura de tela de 2023-03-27 16-04-34](https://user-images.githubusercontent.com/43495376/228041409-7b906cd8-aa85-4c8e-bb97-1332ab77cd82.png)
+
+## Extraindo características arquiteturais a partir dos requisitos
+
+- Algumas características arquiteturais estão explícitas em documentos de requisitos
+- Documentos informam as decisões do arquiteto e pode ser uma boa ferramenta para análise de características
