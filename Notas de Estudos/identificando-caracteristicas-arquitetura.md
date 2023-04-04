@@ -115,4 +115,23 @@
 - A terceira característica de arquitetura que derivamos dos requisitos anteriores é o desempenho
 - Ninguém quer comprar de uma lanchonete com desempenho ruim, especialmente nos horários de pico
 - O desempenho está relacionado com escabilidade. Será necessário defenir alguma estratégia para determinar que tipo de desempenho a aplicação deve ter. Sera com base no número de usuários?
-- Muitas vezes, as características da arquitetura interagem umas com as outras, forçando os arquitetos a defini-los em relação uns aos outros.
+- Muitas vezes, as características da arquitetura interagem umas com as outras, forçando os arquitetos a defini-los em relação uns aos outros
+
+### Características Implicitas
+
+- Muitas das caracteríticas não são específicadas em um documento de requisitos mas são importantes na estruturação do design
+- Uma característica de arquitetura implícita que o sistema pode querer oferecer suporte é a disponibilidade (garantir que os usuários possam acessar a aplicação em tempo que o usuário precisar)
+- Outra característica que está relacionada com a disponibildiade é a confiabilidade (garantir que o site permaneça no ar durante as interações do usuário)
+- A segurança também aparece como característica implicita. Porém o arquiteto não precisa de nenhum projeto estrutural especial para acomodar a segurança. Um bom design no aplicativo será suficiente
+- Algumas das características, exemplo de segurança, o arquiteto deve tomar cuidado ao especificar demais as características
+- A última característica implicita nesse estudo de caso é o da customização (Várias partes do sistema oferecem comportamentos personalizados como receita, vendas locais, entregas). O arquiteto deve oferecer suporte a capacidade de facilitar o comportamento personalizado
+- Este último elemento de design não é crítico para o sucesso do aplicativo
+
+
+- Identificar corretamente elementos estruturais importantes pode facilitar um projeto mais simples ou mais complexo
+- Não existe um bom design em arquitetura, apenas o menos pior e trade-offs
+- Os arquitetos também devem priorizar essas características de arquitetura para tentar encontrar
+os conjuntos necessários mais simples
+- Uma vez que a equipe de arquitetos tenham identificados as características da arquitetura, um exercício que pode ser útil é determinar o menos importante
+- Geralmente, os arquitetos são mais propensos a selecionar as características explícitas da arquitetura, já que muitas das implícitas suportam o sucesso geral
+- A maneira como definimos o que é crítico ou importante para o sucesso ajuda os arquitetos a determinar se o aplicativo realmente requer cada característica da arquitetura
