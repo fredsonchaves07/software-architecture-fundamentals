@@ -88,3 +88,40 @@ public void decision(int c1, int c2) {
 - Muitas ferramentas diferentes podem ser usadas para implementar funções de aptidão, dependendo do características da arquitetura
 - Por exemplo, em “Acoplamento”, os arquitetos podem utilizar métricas como "connascence" que avaliam a modularidade
 - Aqui estão alguns exemplos de funções de adequação que testam vários aspectos da modularidade.
+
+#### Dependencias ciclicas
+
+- A modularidade é uma característica de arquitetura implícita com a qual a maioria dos arquitetos se preocupa
+- Porque a modularidade mal mantida prejudica a estrutura de uma base de código; portanto, os arquitetos devem dar alta prioridade à manutenção de uma boa modularidade
+- Ao codificar em qualquer ambiente popular de desenvolvimento Java ou .NET, assim que um desenvolvedor faz referência a uma classe ainda não importada, a IDE apresenta uma caixa de diálogo que pergunta aos desenvolvedores se eles gostariam de importar automaticamente a referência
+- No entanto, importar classes ou componentes arbitrariamente entre si significa um desastre para a modularidade
+- A imagem abaixo mostra um anti-pattern prejudicial que os arquitetos desejam evitar
+
+![image SVYN31](https://user-images.githubusercontent.com/43495376/234383110-456b0830-c4d4-429d-8278-74f24686ddd0.png)
+
+- Ter uma rede de componentes como essa prejudica a modularidade porque um desenvolvedor não pode reutilizar um componente único sem também trazer os outros junto
+- E, claro, se os outros componentes forem acoplados a outros componentes, a arquitetura tenderá cada vez mais para o antipadrão Big Ball of Mud
+- Como os arquitetos podem gerenciar este comportamento? As revisões de código ajudam muito mas acontecem muito tarde no ciclo desenvolvimento para serem eficazes
+- A solução para este problema é escrever uma função de aptidão para cuidar dos ciclos como mostrado abaixo
+
+```java
+public class CycleTest {
+  private JDepend jdepend;
+  
+  @BeforeEach
+  void init() {
+    jdepend = new JDepend();
+    jdepend.addDirectory("/path/to/project/persistence/classes");
+    jdepend.addDirectory("/path/to/project/web/classes");
+    jdepend.addDirectory("/path/to/project/thirdpartyjars");
+  }
+  
+  @Test
+  void testAllPackages() {
+    Collection packages = jdepend.analyze();
+    assertEquals("Cycles exist", false, jdepend.containsCycles());
+  }
+}
+```
+- No código, um arquiteto usa a ferramenta de métricas JDepend para verificar as dependências entre pacotes
+- Uma função que pode ser inserida no ciclo de desenvolvimento
