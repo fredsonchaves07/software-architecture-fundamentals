@@ -63,3 +63,28 @@ public void decision(int c1, int c2) {
 - Da mesma forma, as equipes podem medir a capacidade de implantação por meio de uma variedade de métricas: 
 - porcentagem de implantações bem-sucedidas a falhas, quanto tempo as implantações demoram, problemas/bugs levantados pelas implantações e uma série de outros
 - Cada equipe tem a responsabilidade de chegar a um bom conjunto de medições que capturem o uso dados completos para sua organização, tanto em qualidade quanto em quantidade
+
+## Funções de governança e adequações
+
+- Como garantir que os desenvolvedores sigam a priorização das características arquiteturais definidos pelo arquiteto?
+- A modularidade é um grande exemplo de um aspecto da arquitetura que é importante mas não urgente
+- Os arquitetos ainda precisam de um mecanismo para governança
+
+### Características arquiteturais governantes
+
+- Governança é uma importante responsabildiade do papel do arquiteto
+- Existem soluções cada vez mais sofisticadas para aliviar problema dos arquitetos 
+- O impulso para a automação em projetos de software gerada pela Extreme Programming criou integração contínua, que levou a uma maior automação nas operações, que agora chamamos de DevOps, continuando até a governança arquitetônica
+
+### Funções de condicionamento
+
+- As funções de condicionamento conhecidas também como **Fitness Function** podem ajudar avaliar problemas complexos
+- Avaliação de custo total, cálculo de melhor rota são alguns dos exemplos que podem usar funções de condicionamento
+- Qualquer mecanismo que forneça uma avaliação de integridade objetiva de alguma característica ou combinação delas
+- Uma nova perspectiva sobre muitas ferramentas existentes
+
+![image ZMJ831](https://user-images.githubusercontent.com/43495376/234148061-df9ec5fd-7548-4169-89e5-82247ea1a8c1.png)
+
+- Muitas ferramentas diferentes podem ser usadas para implementar funções de aptidão, dependendo do características da arquitetura
+- Por exemplo, em “Acoplamento”, os arquitetos podem utilizar métricas como "connascence" que avaliam a modularidade
+- Aqui estão alguns exemplos de funções de adequação que testam vários aspectos da modularidade.
