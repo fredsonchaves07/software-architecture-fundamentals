@@ -125,3 +125,56 @@ public class CycleTest {
 ```
 - No código, um arquiteto usa a ferramenta de métricas JDepend para verificar as dependências entre pacotes
 - Uma função que pode ser inserida no ciclo de desenvolvimento
+
+#### Distância da função principal 
+
+- Conforme o exemplo abaixo, os arquitetos podem utilizar uma fitness function para avaliar a distância da sequência principal
+
+```java
+  @Test
+  void AllPackages() {
+    double ideal = 0.0;
+    double tolerance = 0.5; // project-dependent
+    Collection packages = jdepend.analyze();
+    Iterator iter = packages.iterator();
+    while (iter.hasNext()) {
+      JavaPackage p = (JavaPackage)iter.next();
+      assertEquals("Distance exceeded: " + p.getName(),
+      ideal, p.distance(), tolerance);
+    }
+  }
+```
+- No código, o arquiteto usa JDepend para estabelecer um limite para valores aceitáveis, falhando no teste se uma classe estiver fora do intervalo
+- Os arquitetos devem garantir que os desenvolvedores entendam o propósito de a função de aptidão antes de impô-la a eles.
+- Nos ultimos anos, houve aumento no número de ferramentas fe fitness function que auxiliam os arquitetos
+- Uma dessas ferramentas é o ArchUnit, um framework de teste baseado em JUnit que fornece uma variedade de recursos que permitem que o arquiteto escreva teste de unidade que abordam a modularidade
+
+![image 7PW331](https://user-images.githubusercontent.com/43495376/234682280-458ece04-da96-4046-9995-e63d17fd7b37.png)
+
+- Como o arquiteto pode garantir que os desenvolvedores respeitarão as camadas de um aplicativo monolitico do exemplo acima?
+- Alguns desenvolvedores podem não entender a importância dos padrões, enquanto outros podem adotar uma atitude “melhor pedir perdão do que permissão” por causa de alguma preocupação local primordial, como desempenho. 
+- O ArchUnit permite que os arquitetos resolvam esse problema por meio de uma fitness function
+
+```java
+layeredArchitecture()
+    .layer("Controller").definedBy("..controller..")
+    .layer("Service").definedBy("..service..")
+    .layer("Persistence").definedBy("..persistence..")
+    .whereLayer("Controller").mayNotBeAccessedByAnyLayer()
+    .whereLayer("Service").mayOnlyBeAccessedByLayers("Controller")
+    .whereLayer("Persistence").mayOnlyBeAccessedByLayers("Service")
+```
+
+- Outro exemplo de fitness funciton é o Chaos Monkey da Netflix e o Simian Army
+- Em particular, o Conformity, Security a Janitor Monkeu exemplificam esse recurso
+- O Conformity Monkey permite que os arquitetos da Netflix definam as regras de governança impostas no "Monkey" em produção
+- Por exemplo, se os arquitetos decidiram que cada serviço deve responder de forma útil a todos os verbos RESTful, eles constroem essa regra no Conformity Monkey
+-  Da mesma forma, o Security Monkey verifica cada serviço em busca de defeitos de segurança conhecidos, como portas que não deveriam estar ativas e erros de configuração.
+-  Por fim, o Janitor Monkey procura instâncias que nenhum outro serviço utiliza evitando assim altos custos da nuvem
+-  Quando a Netflix decidiu mover suas operações para a nuvem da Amazon, os arquitetos se preocuparam com o fato de não terem mais controle sobre as operações – o que acontece se aparecer um defeito operacional?
+-  Para resolver esse problema, eles criaram a disciplina de Chaos Engineering com o Chaos Monkey e, eventualmente, o Simian Army.
+-  O Chaos Monkey simulou o caos geral dentro do ambiente de produção para identificar o quão suportaria o sistema
+-  A latência era um problema com algumas instâncias da AWS, portanto, o Chaos Monkey simulava alta latência (o que era um problema tão grande que eles acabaram criando um Monkey especializado para isso, o Latency Monkey).
+-  Ferramentas como o Chaos Kong, que simula uma falha completa de um data center da Amazon, ajudou a Netflix a evitar tais interrupções quando elas ocorreram de verdade.
+-  A engenharia do caos oferece uma nova perspectiva interessante sobre a arquitetura: não é uma questão de se algo vai quebrar, mas quando?
+-  Antecipar essas quebras e fazer testes para evitá-las torna os sistemas muito mais robustos.
