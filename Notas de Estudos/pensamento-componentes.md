@@ -26,3 +26,18 @@
 
 ### Particionando a arquitetura
 
+- Um arquiteto pode criar qualquer tipo de particionamento que desejar. Existem vários estilos que os arquitetos podem utilizar, analisando os trade-offs
+- Na imagem abaixo temos 2 estilos bastante conhecido no desenvolvimento de software (Monolitico modular e arquitetura em camadas)
+- Esses dois estilos representam maneiras diferentes de particionar a arquitetura em nível superior
+- Cada variação, cada um dos componentes de nível superior (camadas ou componentes) provavelmente possui outros componentes incorporados
+- O particionamento de nível superior é de particular interesse para os arquitetos porque define o estilo de arquitetura fundamental e a maneira de particionar o código
+- Organizar a arquitetura com base em recursos técnicos, como o monólito em camadas, representa o particionamento técnico de nível superior
+- Na imagem abaixo, 2 tipos de particionamento de nível superior em arquitetura
+
+![image EY4C51](https://github.com/fredsonchaves07/software-architecture-fundamentals/assets/43495376/fb7c36e3-10b4-4f12-81c7-93efe193c235)
+
+- Na imagem, o arquiteto particionou a funcionalidade do sistema em capacidades técnicas como apresentação, regras de negócios, serviços e persistência de dados
+- Essa forma de organização permite que o desenvolvedor encontre o código relacionado a camada na qual a classe ou método representa (Aplicando a separação de responsabilidades)
+- O padrão de design Model-View-Controller combina com esse padrão de arquitetura facilitando a compreensão dos desenvolvedores
+- Um efeito interessante da predominância da arquitetura em camadas é que está relacionado à forma como as empresas desempenham diferentes papeis no projeto
+- A arquitetura em camadas muda a forma de como as organizações são organizadas
