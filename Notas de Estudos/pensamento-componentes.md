@@ -41,3 +41,37 @@
 - O padrão de design Model-View-Controller combina com esse padrão de arquitetura facilitando a compreensão dos desenvolvedores
 - Um efeito interessante da predominância da arquitetura em camadas é que está relacionado à forma como as empresas desempenham diferentes papeis no projeto
 - A arquitetura em camadas muda a forma de como as organizações são organizadas
+
+#### Particionamento de dominio
+
+- As arquiteturas particionadas por domínio separam os componentes de nível superior por fluxos de trabalho e/ou domínios.
+![image 0PD041](https://github.com/fredsonchaves07/software-architecture-fundamentals/assets/43495376/f245c7ce-a9ce-4879-b350-07a3cab27903)
+
+*Vantagens*
+  - Modelado mais de perto como o negócio funciona em vez de um detalhe de implementação
+  - Facilidade na construção de times multifuncionai em torno de domínios
+  - Mais próximo de uma arquitetura modular monolitica ou microserviços
+  - O fluxo de mensagens corresponde ao domínio do problema
+  - Fácil de migrar dados e componentes para arquitetura distribuída
+
+*Desvantagens*
+  - Pode haver duplicação de códigos de customização
+  - Não pode ser eficiente para um problema simples ou CRUD
+
+#### Particionamento técnico
+
+- Separam componentes de nível superior com base em recursos técnicos em vez de fluxos de trabalhos
+- Isso pode se manifestar como camadas inspiradas na separação Model-View-Controller ou algum outro particionamento técnico ad hoc
+
+![image ENZA51](https://github.com/fredsonchaves07/software-architecture-fundamentals/assets/43495376/924a8640-c51e-4488-92bc-ec13b6cd6031)
+
+*Vantagens*
+  - Separa claramente o código de personalização
+  - Alinha-se melhor ao padrão de arquitetura em camadas
+  - Fácil entendimento do código para desenvolvedores menos experientes
+  - Pode ser fácil a execução e build do sistema
+
+*Desvantagens*
+  - Alto grau de acoplamento com tecnologia
+  - Acoplamento geralmente mais alto no nível de dados. Em um sistema como este, o aplicativo e arquitetos de dados provavelmente colaborariam para criar um único banco de dados
+  - Dificil migração para um sistema distribuido
