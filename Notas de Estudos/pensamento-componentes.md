@@ -75,3 +75,42 @@
   - Alto grau de acoplamento com tecnologia
   - Acoplamento geralmente mais alto no nível de dados. Em um sistema como este, o aplicativo e arquitetos de dados provavelmente colaborariam para criar um único banco de dados
   - Dificil migração para um sistema distribuido
+
+## Papel do Desenvolvedor
+
+- Os desenvolvedores geralmente pegam componentes, projetados em conjunto com a função de arquiteto, e os subdividem ainda mais em classes, funções ou subcomponentes
+- Os desenvolvedores nunca devem considerar os componentes projetados por arquitetos como a última palavra
+
+## Fluxos de identificação de componentes
+
+- A identificação de componentes funciona melhor como um processo iterativo, produzindo e refinando por meio de feedbacks
+
+![image AK5541](https://github.com/fredsonchaves07/software-architecture-fundamentals/assets/43495376/56caf02e-b1f6-4644-841e-b26ac6da8c83)
+
+### Identificação inicial dos componentes
+
+- Antes de começar o projeto de codificação, o arquiteto deve, de alguma forma, determinar com quais componentes de nível superior começar. 
+- O arquiteto tem a liberdade de criar quaisquer componentes que desejar e, em seguida, mapear a funcionalidade do domínio para ver onde o comportamento deve está
+- Esta etapa é mais díficil. A probabilidade de obter um bom projeto a partir desse conjunto inicial de componentes é extremamente pequena. Por isso, os arquitetos devem repetir o processo para melhora-lo
+
+### Atribuindo os requisitos aos componentes
+
+- Após realizar a identificação inicial dos componentes, os arquitetos deve alinhar os requisitos ou histórias de usuários aos componentes
+- Isso pode haver a criação de novos componentes, a consolidação dos existentes ou separação
+- Esse mapeamento não precisa ser exato. É um trabalho de refinamento constante junto com os lideres do time e desenvolvedores
+
+### Analise de funções e responsabilidades
+
+- Ao atribuir histórias e requisitos ao componente, o arquiteto também análisa as funções e responsabilidades elucidadas durante os requisitos para garantir que a granularidade corresponda.
+- Pensar nas funções e comportamentos que o aplicativo deve suportar permite que o arquiteto alinhe a granularidade do componente e do domínio
+
+### Analise das características arquiteturais
+
+- Ao atribuir requisitos aos componentes, o arquiteto também deve observar as características da arquitetura descobertas anteriormente para pensar em como eles podem afetar a divisão e a granularidade dos componentes
+- Por exemplo, enquanto duas partes de um sistema podem lidar com a entrada do usuário, a parte que lida com centenas de usuários simultâneos precisará de características de arquitetura diferentes de outra parte que precisa suportar apenas alguns. Assim, enquanto uma visão puramente funcional do design de componentes pode render um único componente para lidar com a interação do usuário, a análise das características da arquitetura levará a uma subdivisão
+
+### Restruturação dos componentes
+
+- O feedback é crítico no design de software. Assim, os arquitetos devem interagir continuamente em seu projeto de componentes com os desenvolvedores. 
+- Projetar software oferece todos os tipos de dificuldades inesperadas – ninguém pode prever todos os problemas desconhecidos que geralmente ocorrem durante os projetos de software. 
+- Portanto, uma abordagem iterativa para o design do componente é fundamental. Em primeiro lugar, é virtualmente impossível contabilizar todas as diferentes descobertas e casos extremos que surgirão e que encorajarão o redesenho. Em segundo lugar, à medida que a arquitetura e os desenvolvedores se aprofundam na criação do aplicativo, eles obtêm uma compreensão mais sutil de onde o comportamento e as funções devem estar.
