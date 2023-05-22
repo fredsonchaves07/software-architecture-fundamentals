@@ -114,3 +114,39 @@
 - O feedback é crítico no design de software. Assim, os arquitetos devem interagir continuamente em seu projeto de componentes com os desenvolvedores. 
 - Projetar software oferece todos os tipos de dificuldades inesperadas – ninguém pode prever todos os problemas desconhecidos que geralmente ocorrem durante os projetos de software. 
 - Portanto, uma abordagem iterativa para o design do componente é fundamental. Em primeiro lugar, é virtualmente impossível contabilizar todas as diferentes descobertas e casos extremos que surgirão e que encorajarão o redesenho. Em segundo lugar, à medida que a arquitetura e os desenvolvedores se aprofundam na criação do aplicativo, eles obtêm uma compreensão mais sutil de onde o comportamento e as funções devem estar.
+
+## Granularidade dos componentes
+
+- Encontrar a granulardade adequada para os componentes é uma das tarefas dificeis de um arquiteto
+
+## Projeto de componentes
+
+- Não existe uma maneira "correta" de projetar componentes. Mas existem algumas técnicas que podem ajudar o arquiteto a projetar os componenetes com seus trade-offs
+- Em todos os processos, um arquiteto pega os requisitos e tenta determinar quais blocos de construção granulares irão compor o sistema
+- Algumas maneiras gerais de descobrir os componentes e armadilhas que devem ser evitadas
+
+### Descobrindo componentes
+
+- Os arquitetos juntamente com outras pessoas do time, criam um projeto inicial com base no conhecimento geral do sistema e como eles optam por decompo-lo, com base no particionamento técnico ou domínio
+- O objetivo da equipe é um projeto inicial que particione o objeto do problema em grandes pedaços que levam considerações a diferentes características da arquitetura
+
+#### Armadilha de entidade
+
+- Este anti-pattern surge quando um arquiteto identifica incorretamente os relacionamentos do banco de dados
+- Geralmente inidica falta de considerações sobre os fluxos de trabalhos reais
+- Exemplo de definição de componentes através de CRUD's e relacionamento entre objetos (ORM)
+
+![image LWE741](https://github.com/fredsonchaves07/software-architecture-fundamentals/assets/43495376/77c0227f-b491-48a0-8b64-6d50b7449799)
+
+- Existem vários outros frameworks popularesque basicamente fornecem uma interface de usuário padrão com base na estrutura de tabelade banco de dados
+- Soluções como Ruby on Rails e até mesmo Django possuem tais recursos que facilita o desenvolvimento de CRUD's
+- Se as necessidades de um arquiteto exigirem apenas um mapeamento simples de um banco de dados para uma interface de usuário, a arquitetura completa não é necessára; uma dessas estruturas será suficiente.
+
+#### Abordagem de Ator / Ações
+
+- É uma maneira pouplar que os arquitetos usam para mapear os reqisitos para os componentes
+- Originalmente definida pelo Relational Unified Process
+- Os arquitetos identifica os atores que executam atividades com o sistema e as ações que os mesmos podem executar
+- Fornece uma técnica para descobrir os usuários tipicos do sistema e que tipo de coisas eles podem fazer com o sistema
+- Este estilo de decomposição de componentes funciona bem tanto para sistemas monolíticos bem como distribuidos
+
