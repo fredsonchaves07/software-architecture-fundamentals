@@ -150,3 +150,21 @@
 - Fornece uma técnica para descobrir os usuários tipicos do sistema e que tipo de coisas eles podem fazer com o sistema
 - Este estilo de decomposição de componentes funciona bem tanto para sistemas monolíticos bem como distribuidos
 
+#### Event storming
+
+- Técnica oriunda do DDD muito utilizado em microserviços
+- O arquiteto assume que o projeto usará mensagens e/ou eventos para comunicação entre vários componentes. Para isso, a equipe tenta determinar quais eventos ocorrem no sistema com base nos requisitos e funções identificadas
+- Isso funciona bem em arquiteturas distribuídas como microsserviços que usam eventos e mensagens, porque ajuda os arquitetos a definir as mensagens usadas no sistema eventual
+
+#### Abordagem de trabalho de fluxo
+
+- Alternativo ao event-storming. Oferece uma abordagem mais genérica para arquitetos que não usam o DDD ou mensagens.
+- Modela os componentes em torno de fluxos de trabalho, sem as restrições explicitas em construir um sistema baseado em mensagens
+
+## Arquitetura Quantum Redux: Escolhendo Entre Arquiteturas monolíticas e distribuídas
+
+- Cada estilo de arquitetura oferece uma variedade de compensações
+- No entanto, a decisão fundamental está em quantas características arquiteturais se decobre durante o processo de design 
+- Se o sistema puder gerenciar com um único quantum (em outras palavras, um conjunto de características de arquitetura), uma arquitetura monolítica oferece muitas vantagens
+- Por outro lado, diferentes características de arquitetura para componentes requerem uma arquitetura distribuída para acomodar diferentes características de arquitetura
+- A capacidade de determinar uma característica de design fundamental da arquitetura (monolítica versus distribuída) no início do processo de design destaca uma das vantagens de usar o quantum de rquitetura como uma forma de analisar o escopo e o acoplamento das características da arquitetura
