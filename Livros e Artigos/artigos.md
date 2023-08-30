@@ -34,6 +34,7 @@
 - [ ] Melvin E. Conway. “How Do Committees Invent?” Datamation 14, no. 4 (1968): 28–31.
 - [ ] International Council on Systems Engineering, “Feature-Based Systems and Software Product Line Engineering: A Primer,” Technical ProductINCOSE-TP-2019-002-03-0404, https://connect.incose.org/Pages/Product-Details.aspx?ProductCode=PLE_Primer_2019
 - [ ] A Decade of Conway's Law: A Literature Review from 2003-2012, https://ieeexplore.ieee.org/document/6664726
+- [ ] On the Criteria To Be Used in Decomposing Systems into Modules, Parnas 72
 
 ## Artigos sobre métricas de coesão
 
