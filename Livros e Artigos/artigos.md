@@ -42,3 +42,7 @@
 - [ ] [Extension of Object-Oriented Metrics Suite for Software Maintenance](https://www.hindawi.com/journals/isrn/2013/276105/)
 - [ ] [Chidamber and Kemerer Object-Oriented Measures: Analysis of their Design from the Metrology Perspective](https://www.researchgate.net/publication/260835125_Chidamber_and_Kemerer_Object-Oriented_Measures_Analysis_of_their_Design_from_the_Metrology_Perspective)
 - [ ] [SATT: Tailoring Code Metric Thresholds for Different Software Architecture](https://pure.tudelft.nl/ws/files/12555765/TUD_SERG_2016_023.pdf)
+
+## Artigos sobre orientação a objetos
+
+- [ ] On Understanding Types, Data Abstraction, and Polymorphism
