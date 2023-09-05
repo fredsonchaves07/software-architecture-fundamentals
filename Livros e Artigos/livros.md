@@ -27,3 +27,8 @@
 
 - [ ] Structured Design: Fundamentals of a Discipline of Computer Program and Systems Design
 - [ ] What Every Programmer Should Know About Object-Oriented Design
+
+## Ciência da computação
+
+- [ ] The Computer Science and Engineering Handbook Allen B. Tucker Jr.
+- [ ] Abstraction and Specification in Program Development (MIT Electrical Engineering and Computer Science) Barbara Liskov, John V. Guttag
