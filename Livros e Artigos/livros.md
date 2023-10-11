@@ -16,6 +16,7 @@
 - [ ] Fundamentals of Object-Oriented Design in UML
 - [ ] Reliable Software Through Composite Design
 - [ ] Object-Oriented Software Construction
+- [ ] Object-Oriented Analysis and Design with Applications
 
 
 ## Agilidade
