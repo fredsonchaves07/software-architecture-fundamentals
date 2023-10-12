@@ -18,6 +18,14 @@
 - [ ] Object-Oriented Software Construction
 - [ ] Object-Oriented Analysis and Design with Applications
 
+## Programação reativa
+
+- [ ] Reactive Systems in Java: Resilient, Event-Driven Architecture with Quarkus
+- [ ] Reactive Design Patterns (English Edition)
+- [ ] The Art of Multiprocessor Programming
+- [ ] Reactive Application Development
+- [ ] Reactive Programming with RxJava: Creating Asynchronous, Event-Based Applications
+
 
 ## Agilidade
 
