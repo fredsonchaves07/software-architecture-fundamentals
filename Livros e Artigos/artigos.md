@@ -36,6 +36,7 @@
 - [ ] A Decade of Conway's Law: A Literature Review from 2003-2012, https://ieeexplore.ieee.org/document/6664726
 - [ ] On the Criteria To Be Used in Decomposing Systems into Modules, Parnas72
 - [ ] Encapsulation and Inhreritance in Object Oriented Programming Languages, Snyder86
+- [ ] Life beyond Distributed Transactions: an Apostate’s Opinion Position Paper
 
 ## Artigos sobre métricas de coesão
 
@@ -46,3 +47,9 @@
 ## Artigos sobre orientação a objetos
 
 - [ ] On Understanding Types, Data Abstraction, and Polymorphism
+
+## Artigos sobre DDD e Arquitetura de Software
+
+- [ ] [Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping/)
+- [ ] [Specifications, Eric evans and Fowler](https://www.martinfowler.com/apsupp/spec.pdf)
+- [ ] 
