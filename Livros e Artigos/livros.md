@@ -10,6 +10,8 @@
 - [ ] Paul Clements and Linda Northrop. Software Product Lines: Practices and Patterns. Addison-Wesley, 2016.
 - [ ] Growing Object-Oriented Software, Guided by Tests
 - [ ] Composite/Structured Design
+- [ ] Patterns of Enterprise Application Architecture, Martin Fowler
+- [ ] Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions, Gregor Hohpe and Bobby Woolf 
 
 ## Design e Orientação a Objetos
 
