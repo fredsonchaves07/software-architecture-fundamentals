@@ -43,3 +43,5 @@
 
 - [ ] The Computer Science and Engineering Handbook Allen B. Tucker Jr.
 - [ ] Abstraction and Specification in Program Development (MIT Electrical Engineering and Computer Science) Barbara Liskov, John V. Guttag
+- [ ] Graph Drawing: Algorithms for the Visualization of Graphs Ioannis Tollis, Loannis Tollis, Giuseppe Di Battista
+- [ ] Handbook of Discrete and Computational Geometry
