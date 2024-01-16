@@ -13,4 +13,12 @@ public class ProductTest {
         product.setPrice(0);
         assertThrows(Error.class, product::enable);
     }
+
+    @Test
+    public void testProductDesable() {
+        Product product = Product.newProduct("Hello", 0, ProductInterface.DISABLED);
+        assertDoesNotThrow(product::disable);
+        product.setPrice(10.0);
+        assertThrows(Error.class, product::disable);
+    }
 }

@@ -16,8 +16,8 @@ public class Product implements ProductInterface {
         return new Product(UUID.randomUUID().toString(), name, price, status);
     }
 
-    public static Product newProduct(String id, String name, double price, String status) {
-        return new Product(id, name, price, status);
+    public static Product newProduct(String name, double price) {
+        return new Product(UUID.randomUUID().toString(), name, price, DISABLED);
     }
 
     private Product(String id, String name, double price, String status) {
@@ -29,7 +29,9 @@ public class Product implements ProductInterface {
 
     @Override
     public boolean isValid() {
-        return false;
+        if (status.isEmpty()) status = DISABLED;
+        if (!status.equals(ENABLED) && !status.equals(DISABLED)) return false;
+        return !(price < 0);
     }
 
     @Override
@@ -40,7 +42,8 @@ public class Product implements ProductInterface {
 
     @Override
     public void disable() {
-
+        if (price != 0) throw new Error("the price must zero");
+        status = DISABLED;
     }
 
     @Override
