@@ -52,4 +52,13 @@
 
 - [ ] [Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping/)
 - [ ] [Specifications, Eric evans and Fowler](https://www.martinfowler.com/apsupp/spec.pdf)
-- [ ] 
+
+## Artigos sobre estruturas de dados
+
+- [ ] Algorithm 232 Heap Sort Communications of the ACM Volume 7
+- [ ] Algorithm 245 Treesort Communications of the ACM Volume 7
+- [ ] Programming pearls: thanks, heaps - Communications of the ACM Volume 28
+- [ ] Average-case results on heapsort - BIT Numerical Mathematics
+- [ ] Heaps on Heaps Gaston H. Gonnet and J. Ian Munro
+- [ ] Building heaps fast C.J.H McDiarmid ∗, B.A Reed
+- [ ] The Analysis of heapsort Russel Schaffer and Robert Sedgewick
