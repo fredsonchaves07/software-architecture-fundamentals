@@ -16,14 +16,18 @@ export default class FindInvoiceUseCase {
 
     const result = await this._invoiceRepository.find(input.id)
 
-    const items : InvoiceItems[] = []
+    const items  : any[] = []
+
+    let total : number = 0;
 
 
     result.items.forEach(item => {
-        items.push(new InvoiceItems({
-            name: item.name,
-            price: item.price
-        }))
+        items.push({
+          id: item.id,
+          name: item.name,
+          price: item.price
+        })
+        total += item.price;
     })
 
     return {
@@ -39,8 +43,8 @@ export default class FindInvoiceUseCase {
         result.address.zipCode,
       ),
       items: items,
-      createdAt: result.createdAt,
-      updatedAt: result.updatedAt
+      total: total,
+      createdAt: result.createdAt
     }
   }
 }

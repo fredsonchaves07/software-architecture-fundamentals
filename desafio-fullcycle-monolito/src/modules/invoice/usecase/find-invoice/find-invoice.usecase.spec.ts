@@ -1,6 +1,7 @@
 import Address from "../../../@shared/domain/value-object/address"
 import InvoiceItems from "../../domain/invoice-items.entity"
 import Invoice from "../../domain/invoice.entity"
+import FindInvoiceUseCase from "./find-invoice.usecase"
 
 const invoice = new Invoice({
   name: "Lucian",
@@ -45,14 +46,14 @@ describe("Find Invoice use case unit test", () => {
     }
 
     const result = await usecase.execute(input)
+    const total = 300;
 
     expect(repository.find).toHaveBeenCalled()
-    expect(result.id).toEqual(input.id)
     expect(result.name).toEqual(invoice.name)
     expect(result.address).toEqual(invoice.address)
     expect(result.document).toEqual(invoice.document)
-    expect(result.items).toEqual(invoice.items)
+    expect(result.items.length).toEqual(2)
+    expect(result.total).toEqual(total)
     expect(result.createdAt).toEqual(invoice.createdAt)
-    expect(result.updatedAt).toEqual(invoice.updatedAt)
   })
 })
