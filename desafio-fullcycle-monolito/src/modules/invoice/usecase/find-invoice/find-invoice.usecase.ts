@@ -23,7 +23,7 @@ export default class FindInvoiceUseCase {
 
     result.items.forEach(item => {
         items.push({
-          id: item.id,
+          id: item.id.id,
           name: item.name,
           price: item.price
         })

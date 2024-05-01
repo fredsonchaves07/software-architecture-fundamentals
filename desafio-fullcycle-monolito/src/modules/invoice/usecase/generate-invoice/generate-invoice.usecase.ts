@@ -16,18 +16,7 @@ export default class GenerateInvoiceUseCase {
 
   async execute(input: GenerateInvoiceUseCaseInputDto): Promise<GenerateInvoiceUseCaseOutputDto> {
 
-    const itemsInvoiceItem : any[] = [];
-
-    input.items.forEach(item => {
-        const invoiceItemProps = {
-            name: item.name,
-            price: item.price
-        }
-        itemsInvoiceItem.push(new InvoiceItems(invoiceItemProps))
-    })
-
     const props = {
-        id: new Id(),
         name: input.name,
         document: input.document,
         address: new Address(
@@ -38,27 +27,21 @@ export default class GenerateInvoiceUseCase {
             input.state,
             input.zipCode,
         ),
-        items: itemsInvoiceItem
+        items: input.items.map(
+          (item) =>
+            new InvoiceItems({
+              id: new Id(item.id),
+              name: item.name,
+              price: item.price,
+            })
+        )
       }
 
-      const items  : any[] = []
-
-      let total : number = 0;
-  
       const invoice = new Invoice(props)
       await this._invoiceRepository.add(invoice)
 
-      invoice.items.forEach(item => {
-        items.push({
-          id: item.id,
-          name: item.name,
-          price: item.price
-        })
-        total += item.price;
-    })
-  
       return {
-        id: invoice.id.toString(),
+        id: invoice.id.id,
         name: invoice.name,
         document: invoice.document,
         street: invoice.address.street,
@@ -67,8 +50,12 @@ export default class GenerateInvoiceUseCase {
         city: invoice.address.city,
         state: invoice.address.state,
         zipCode: invoice.address.zipCode,
-        items: items,
-        total: total
+        items: invoice.items.map((item) => ({
+          id: item.id.toString(),
+          name: item.name,
+          price: item.price
+        })),
+        total: invoice.total
       }
     }
   }

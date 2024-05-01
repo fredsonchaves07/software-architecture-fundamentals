@@ -1,5 +1,6 @@
-import { Column, Model, PrimaryKey, Table } from "sequelize-typescript";
-import { InvoiceItemModel } from "./invoice.item.model";
+import { Column, DataType, HasMany, Model, PrimaryKey, Table } from "sequelize-typescript";
+import { DataTypes, NonAttribute } from "sequelize";
+import InvoiceItemModel from "./invoice.item.model";
 
 @Table({
   tableName: 'invoice',
@@ -16,8 +17,8 @@ export class InvoiceModel extends Model {
   @Column({ allowNull: false })
   document: string
 
-  @Column({ allowNull: true })
-  items: InvoiceItemModel[]
+  @HasMany(() => InvoiceItemModel)
+  items: InvoiceItemModel[];
 
   @Column({ allowNull: false })
   street: string
