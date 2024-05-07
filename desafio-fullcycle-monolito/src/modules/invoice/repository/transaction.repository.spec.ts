@@ -1,13 +1,11 @@
-import { Sequelize } from "sequelize-typescript";
-import { InvoiceModel } from "./invoice.model";
-import InvoiceItemModel from "./invoice.item.model";
-import Invoice from "../domain/invoice.entity";
 import Id from "../../@shared/domain/value-object/id.value-object";
-import Address from "../../@shared/domain/value-object/address";
-import InvoiceItems from "../domain/invoice-items.entity";
-import InvoiceRepository from "./invoice.repository";
-
-
+import Address from "../domain/address.entity";
+import Invoice from "../domain/invoice";
+import Product from "../domain/product.entity";
+import InvoiceItemModel from "./transaction.item.model";
+import InvoiceModel from "./transaction.model";
+import InvoiceRepository from "./transaction.repository";
+import { Sequelize } from "sequelize-typescript";
 
 describe("InvoiceRepository test", () => {
     let sequelize: Sequelize;
@@ -30,29 +28,31 @@ describe("InvoiceRepository test", () => {
     it("should create a invoice", async () => {
         const invoice = new Invoice({
             id: new Id("1"),
-            name: "Lucian",
-            document: "1234-5678",
-            address: new Address(
-              "Rua 123",
-              "99",
-              "Casa Verde",
-              "Criciúma",
-              "SC",
-              "88888-888",
-            ),
+            name: "John Doe",
+            document: "123456789",
+            address: new Address({
+                street: "Street",
+                number: "123",
+                complement: "Complement",
+                city: "City",
+                state: "State",
+                zipCode: "12345678"
+            }),
             items: [
-              new InvoiceItems({
-                  name: "Product 1",
-                  price: 100
-              }),
-              new InvoiceItems({
-                  name: "Product 2",
-                  price: 200
-              })
-            ]
-          })
+                new Product({
+                id: new Id("1"),
+                name: "Item 1",
+                price: 100,
+            }),
+                new Product({
+                id: new Id("2"),
+                name: "Item 2",
+                price: 200,
+            })
+            ]   
+        });
         const repository = new InvoiceRepository();
-        await repository.add(invoice);
+        await repository.create(invoice);
 
         const resultFind = await InvoiceModel.findOne({
             where: { id: "1" },
@@ -67,7 +67,7 @@ describe("InvoiceRepository test", () => {
         expect(resultFind.complement).toBe(invoice.address.complement);
         expect(resultFind.city).toBe(invoice.address.city);
         expect(resultFind.state).toBe(invoice.address.state);
-        expect(resultFind.zipcode).toBe(invoice.address.zipCode);
+        expect(resultFind.zipCode).toBe(invoice.address.zipCode);
         expect(resultFind.items).toHaveLength(2);
         expect(resultFind.items[0].id).toBe(invoice.items[0].id.id);
         expect(resultFind.items[0].name).toBe(invoice.items[0].name);
@@ -75,34 +75,37 @@ describe("InvoiceRepository test", () => {
         expect(resultFind.items[1].id).toBe(invoice.items[1].id.id);
         expect(resultFind.items[1].name).toBe(invoice.items[1].name);
         expect(resultFind.items[1].price).toBe(invoice.items[1].price);
+        expect(resultFind.total).toBe(300);
     });
 
     it("should find a invoice", async () => {
         const invoice = new Invoice({
             id: new Id("1"),
-            name: "Lucian",
-            document: "1234-5678",
-            address: new Address(
-              "Rua 123",
-              "99",
-              "Casa Verde",
-              "Criciúma",
-              "SC",
-              "88888-888",
-            ),
+            name: "John Doe",
+            document: "123456789",
+            address: new Address({
+                street: "Street",
+                number: "123",
+                complement: "Complement",
+                city: "City",
+                state: "State",
+                zipCode: "12345678"
+            }),
             items: [
-              new InvoiceItems({
-                  name: "Product 1",
-                  price: 100
-              }),
-              new InvoiceItems({
-                  name: "Product 2",
-                  price: 200
-              })
-            ]
-          })
+                new Product({
+                id: new Id("1"),
+                name: "Item 1",
+                price: 100,
+            }),
+                new Product({
+                id: new Id("2"),
+                name: "Item 2",
+                price: 200,
+            })
+            ]   
+        });
         const repository = new InvoiceRepository();
-        await repository.add(invoice);
+        await repository.create(invoice);
 
         const resultFind = await repository.find(invoice.id.id);
 

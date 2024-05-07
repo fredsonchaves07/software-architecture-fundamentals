@@ -1,26 +1,26 @@
 import UseCaseInterface from "../../@shared/usecase/use-case.interface";
-import InvoiceFacadeInterface, { FindInvoiceFacadeInputDTO, FindInvoiceFacadeOutputDTO, GenerateInvoiceFacadeInputDto, GenerateInvoiceFacadeOutputDto } from "./invoice.facade.interface";
+import InvoiceFacadeInterface, { FindInvoiceFacadeOutputDTO, GenerateInvoiceFacadeInputDto, GenerateInvoiceFacadeOutputDto } from "./invoice.facade.interface";
 
-export interface UseCaseProps {
-  findUsecase: UseCaseInterface;
-  generateUseCase: UseCaseInterface;
+export interface UseCasesProps {
+  create: UseCaseInterface;
+  find: UseCaseInterface;
 }
 
 export default class InvoiceFacade implements InvoiceFacadeInterface {
-  private _findUsecase: UseCaseInterface;
-  private _generateUseCase: UseCaseInterface;
+  private _createUseCase: UseCaseInterface;
+  private _findUseCase: UseCaseInterface;
 
-  constructor(usecaseProps: UseCaseProps) {
-    this._findUsecase = usecaseProps.findUsecase;
-    this._generateUseCase = usecaseProps.generateUseCase;
+  constructor(useCasesProps: UseCasesProps) {
+      this._createUseCase = useCasesProps.create;
+      this._findUseCase = useCasesProps.find;
+  }
+  
+  async create(input: GenerateInvoiceFacadeInputDto): Promise<GenerateInvoiceFacadeOutputDto> {
+      return this._createUseCase.execute(input)
   }
 
-  async generate(input: GenerateInvoiceFacadeInputDto): Promise<GenerateInvoiceFacadeOutputDto> {
-    return this._generateUseCase.execute(input);
+  async find(id: string): Promise<FindInvoiceFacadeOutputDTO> {
+      return this._findUseCase.execute({id: id});
   }
-  async find(
-    input: FindInvoiceFacadeInputDTO
-  ): Promise<FindInvoiceFacadeOutputDTO> {
-    return  this._findUsecase.execute(input);
-  }
+
 }
